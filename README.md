@@ -13,9 +13,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total%20Stars-119%2B-f6c343?style=for-the-badge&logo=github&logoColor=white" alt="Total Stars"/>
-  <img src="https://img.shields.io/badge/Public%20Repos-10-22c55e?style=for-the-badge&logo=github&logoColor=white" alt="Public Repos"/>
-  <img src="https://img.shields.io/badge/Followers-7-8b5cf6?style=for-the-badge&logo=github&logoColor=white" alt="Followers"/>
+  <img src="https://img.shields.io/badge/Total%20Stars-135%2B-f6c343?style=for-the-badge&logo=github&logoColor=white" alt="Total Stars"/>
+  <img src="https://img.shields.io/badge/Public%20Repos-9-22c55e?style=for-the-badge&logo=github&logoColor=white" alt="Public Repos"/>
+  <img src="https://img.shields.io/badge/Followers-8-8b5cf6?style=for-the-badge&logo=github&logoColor=white" alt="Followers"/>
 </p>
 
 <p align="center">
@@ -52,29 +52,29 @@
 
 | 项目 | 说明 | ⭐ |
 |---|---|---|
-| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 基于 Bridge Framework 的抖音全自动评论管理:搜索、全量评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | 45 |
-| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理:搜索、评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | 22 |
+| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 基于 Bridge Framework 的抖音全自动评论管理:搜索、全量评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | 48 |
+| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理:搜索、评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | 26 |
 | [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具:Bridge Server + 油猴脚本驱动真实浏览器,搜索职位 / 智能匹配评分 / 批量打招呼 / LLM 招呼语 / @ref 缓存,17 条命令 | 13 |
-| [🎬 **tiktok-cli**](https://github.com/Yht20927/tiktok-cli) | 基于 Bridge Framework 的 TikTok 全自动评论管理:搜索、全量评论爬取(含嵌套回复)、AI 智能回复与运营 | 1 |
-| [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 基于 Bridge Framework 的同花顺工具,提供基本数据服务,可用于进一步优化开发 | 1 |
+| [🎬 **tiktok-cli**](https://github.com/Yht20927/tiktok-cli) | 基于 Bridge Framework 的 TikTok 全自动评论管理:搜索、全量评论爬取(含嵌套回复)、AI 智能回复与运营 | 2 |
+| [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 基于 Bridge Framework 的同花顺工具,提供基本数据服务,可用于进一步优化开发 | 4 |
 
 ### 🎬 媒体与创作
 
 | 项目 | 说明 | ⭐ |
 |---|---|---|
-| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播全自动录制 + 多模态 AI 智能切片系统:录制、弹幕、ASR、信号融合、自动剪辑高光片段 | 29 |
+| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播全自动录制 + 多模态 AI 智能切片系统:录制、弹幕、ASR、信号融合、自动剪辑高光片段 | 31 |
 
 ### 🧠 AI Agent 基础设施
 
 | 项目 | 说明 | ⭐ |
 |---|---|---|
-| [🧠 **my-claude-memory**](https://github.com/Yht20927/my-claude-memory) | 为 Claude Code 等 Agent 打造的分层记忆管理系统,让 AI 跨会话 / 跨项目 / 跨机器持久化并共享项目与个人知识 | 3 |
+| [🧠 **my-claude-memory**](https://github.com/Yht20927/my-claude-memory) | 为 Claude Code 等 Agent 打造的分层记忆管理系统,让 AI 跨会话 / 跨项目 / 跨机器持久化并共享项目与个人知识 | 4 |
 
 ### 🔧 效率工具
 
 | 项目 | 说明 | ⭐ |
 |---|---|---|
-| [📝 **markdown-to**](https://github.com/Yht20927/markdown-to) | md-to.com 核心功能的命令行复刻,所有转换本地完成,支持批量与脚本集成 | 2 |
+| [📝 **markdown-to**](https://github.com/Yht20927/markdown-to) | md-to.com 核心功能的命令行复刻,所有转换本地完成,支持批量与脚本集成 | 3 |
 
 ## 🛠️ Tech Stack
 
