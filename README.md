@@ -86,29 +86,29 @@
 
 | 项目 | 描述 | 信号 |
 |---|---|---|
-| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 抖音全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `⭐ 53` `🍴 13` |
-| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理：搜索、评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `⭐ 28` `🍴 4` |
-| [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具：搜索职位 / 智能匹配评分 / 批量打招呼 / LLM 招呼语，17 条命令 | `⭐ 14` `🍴 4` |
-| [🎬 **tiktok-cli**](https://github.com/Yht20927/tiktok-cli) | 基于 Bridge Framework 的 TikTok 全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复 | `⭐ 2` |
-| [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 基于 Bridge Framework 的同花顺工具，提供基本数据服务与简易量化 | `⭐ 5` |
+| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 抖音全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `⭐53 · 🍴13` |
+| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理：搜索、评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `⭐28 · 🍴4` |
+| [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具：搜索职位 / 智能匹配评分 / 批量打招呼 / LLM 招呼语，17 条命令 | `⭐14 · 🍴4` |
+| [🎬 **tiktok-cli**](https://github.com/Yht20927/tiktok-cli) | 基于 Bridge Framework 的 TikTok 全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复 | `⭐2` |
+| [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 基于 Bridge Framework 的同花顺工具，提供基本数据服务与简易量化 | `⭐5` |
 
 ## 🎬 媒体与创作
 
 | 项目 | 描述 | 信号 |
 |---|---|---|
-| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播全自动录制 + 多模态 AI 智能切片：录制、弹幕、ASR、信号融合、自动剪辑高光片段 | `⭐ 33` `🍴 5` |
+| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播全自动录制 + 多模态 AI 智能切片：录制、弹幕、ASR、信号融合、自动剪辑高光片段 | `⭐33 · 🍴5` |
 
 ## 🧠 AI Agent 基础设施
 
 | 项目 | 描述 | 信号 |
 |---|---|---|
-| [🧠 **my-claude-memory**](https://github.com/Yht20927/my-claude-memory) | 为 Claude Code 等 Agent 打造的分层记忆管理系统，跨会话 / 跨项目 / 跨机器持久化 | `⭐ 4` |
+| [🧠 **my-claude-memory**](https://github.com/Yht20927/my-claude-memory) | 为 Claude Code 等 Agent 打造的分层记忆管理系统，跨会话 / 跨项目 / 跨机器持久化 | `⭐4` |
 
 ## 🔧 效率工具
 
 | 项目 | 描述 | 信号 |
 |---|---|---|
-| [📝 **markdown-to**](https://github.com/Yht20927/markdown-to) | md-to.com 核心功能的命令行复刻，所有转换本地完成，支持批量与脚本集成 | `⭐ 3` |
+| [📝 **markdown-to**](https://github.com/Yht20927/markdown-to) | md-to.com 核心功能的命令行复刻，所有转换本地完成，支持批量与脚本集成 | `⭐3` |
 
 ---
 
