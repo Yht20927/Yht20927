@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3200&pause=700&color=4ADE80&center=true&vCenter=true&multiline=true&repeat=true&width=760&height=110&lines=%24+whoami+%3E%3E+yht20927;%24+mission+%3E%3E+real+browsers%2C+not+simulation;%24+pattern+%3E%3E+userscript+%E2%87%84+bridge-server+%E2%87%84+llm+agent;%24+status+%3E%3E+5+platforms+online+%C2%B7+146%E2%98%85" alt="terminal typing" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3200&pause=700&color=4ADE80&center=true&vCenter=true&width=760&height=50&lines=%24+whoami+%3E%3E+yht20927;%24+mission+%3E%3E+real+browsers%2C+not+simulation;%24+pattern+%3E%3E+userscript+%E2%87%84+bridge-server+%E2%87%84+llm+agent;%24+status+%3E%3E+5+platforms+online+%C2%B7+146%E2%98%85" alt="terminal typing" />
 </p>
 
 <p align="center">
