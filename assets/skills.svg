@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d16"/><stop offset="0.5" stop-color="#0d1020"/><stop offset="1" stop-color="#0b0d16"/>
+    </linearGradient>
+    <linearGradient id="gmg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="gcy" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="gpu" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.35"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .fps{font-family:"Fira Code","Cascadia Code",Menlo,Consolas,monospace}
+    @keyframes growL{from{width:0}}
+    @keyframes shine{0%{transform:translateX(-160px)}100%{transform:translateX(620px)}}
+    @keyframes gridm{0%{transform:translate(0,0)}100%{transform:translate(28px,28px)}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    .blink{animation:blink 1s steps(1) infinite}
+  </style>
+
+  <rect width="1100" height="430" fill="url(#bg)"/>
+  <!-- animated grid -->
+  <g opacity="0.05" stroke="#a78bfa">
+    <g style="animation:gridm 3.2s linear infinite">
+      <path d="M0 0 H1100 M0 0 V430 M0 28 H1100 M0 56 H1100 M0 84 H1100 M0 112 H1100 M0 140 H1100 M0 168 H1100 M0 196 H1100 M0 224 H1100 M0 252 H1100 M0 280 H1100 M0 308 H1100 M0 336 H1100 M0 364 H1100 M0 392 H1100"/>
+      <path d="M28 0 V430 M56 0 V430 M84 0 V430 M112 0 V430 M140 0 V430 M168 0 V430 M196 0 V430 M224 0 V430 M252 0 V430 M280 0 V430 M308 0 V430 M336 0 V430 M364 0 V430 M392 0 V430 M420 0 V430 M448 0 V430 M476 0 V430 M504 0 V430 M532 0 V430 M560 0 V430 M588 0 V430 M616 0 V430 M644 0 V430 M672 0 V430 M700 0 V430 M728 0 V430 M756 0 V430 M784 0 V430 M812 0 V430 M840 0 V430 M868 0 V430 M896 0 V430 M924 0 V430 M952 0 V430 M980 0 V430 M1008 0 V430 M1036 0 V430 M1064 0 V430 M1092 0 V430"/>
+    </g>
+  </g>
+
+  <text class="fps" x="40" y="36" font-size="17" letter-spacing="2" fill="#22d3ee" font-weight="700">LOADOUT :: STACK PROFICIENCY</text>
+  <text class="fps" x="1060" y="36" text-anchor="end" font-size="15" fill="#5b6478">calibrated <tspan class="blink" fill="#22d3ee">&#9608;</tspan></text>
+
+  <!-- rows: label / bar / pct -->
+  <g class="fps" font-size="17">
+    <!-- JS -->
+    <text x="60" y="92" fill="#cbd5e1" font-weight="700">JavaScript / TypeScript</text>
+    <rect x="430" y="78" width="540" height="14" rx="7" fill="#141a2e"/>
+    <rect class="gl" x="430" y="78" width="503" height="14" rx="7" fill="url(#gmg)" style="animation:growL 1.6s ease forwards;clip-path:url(#c0)"/>
+    <text x="1000" y="92" fill="#f472b6" font-weight="700">93%</text>
+    <g clip-path="url(#c0)"><rect x="430" y="70" width="150" height="30" fill="url(#shine)" style="animation:shine 2.6s linear infinite"/></g>
+    <clipPath id="c0"><rect x="430" y="78" width="503" height="14" rx="7"/></clipPath>
+
+    <!-- Python -->
+    <text x="60" y="142" fill="#cbd5e1" font-weight="700">Python</text>
+    <rect x="430" y="128" width="540" height="14" rx="7" fill="#141a2e"/>
+    <rect class="gl" x="430" y="128" width="475" height="14" rx="7" fill="url(#gcy)" style="animation:growL 1.6s ease forwards 0.12s;clip-path:url(#c1)"/>
+    <text x="1000" y="142" fill="#22d3ee" font-weight="700">88%</text>
+    <clipPath id="c1"><rect x="430" y="128" width="475" height="14" rx="7"/></clipPath>
+    <g clip-path="url(#c1)"><rect x="430" y="120" width="150" height="30" fill="url(#shine)" style="animation:shine 2.6s linear infinite 0.5s"/></g>
+
+    <!-- Browser automation -->
+    <text x="60" y="192" fill="#cbd5e1" font-weight="700">Browser Automation (userscript/CDP)</text>
+    <rect x="430" y="178" width="540" height="14" rx="7" fill="#141a2e"/>
+    <rect class="gl" x="430" y="178" width="530" height="14" rx="7" fill="url(#gpu)" style="animation:growL 1.6s ease forwards 0.24s;clip-path:url(#c2)"/>
+    <text x="1000" y="192" fill="#a78bfa" font-weight="700">98%</text>
+    <clipPath id="c2"><rect x="430" y="178" width="530" height="14" rx="7"/></clipPath>
+    <g clip-path="url(#c2)"><rect x="430" y="170" width="150" height="30" fill="url(#shine)" style="animation:shine 2.6s linear infinite 1s"/></g>
+
+    <!-- WS / bridge -->
+    <text x="60" y="242" fill="#cbd5e1" font-weight="700">WebSocket / Bridge Server</text>
+    <rect x="430" y="228" width="540" height="14" rx="7" fill="#141a2e"/>
+    <rect class="gl" x="430" y="228" width="486" height="14" rx="7" fill="url(#gmg)" style="animation:growL 1.6s ease forwards 0.36s;clip-path:url(#c3)"/>
+    <text x="1000" y="242" fill="#f472b6" font-weight="700">90%</text>
+    <clipPath id="c3"><rect x="430" y="228" width="486" height="14" rx="7"/></clipPath>
+    <g clip-path="url(#c3)"><rect x="430" y="220" width="150" height="30" fill="url(#shine)" style="animation:shine 2.6s linear infinite 1.5s"/></g>
+
+    <!-- LLM / AI agent -->
+    <text x="60" y="292" fill="#cbd5e1" font-weight="700">LLM / AI Agent Integration</text>
+    <rect x="430" y="278" width="540" height="14" rx="7" fill="#141a2e"/>
+    <rect class="gl" x="430" y="278" width="491" height="14" rx="7" fill="url(#gcy)" style="animation:growL 1.6s ease forwards 0.48s;clip-path:url(#c4)"/>
+    <text x="1000" y="292" fill="#22d3ee" font-weight="700">91%</text>
+    <clipPath id="c4"><rect x="430" y="278" width="491" height="14" rx="7"/></clipPath>
+    <g clip-path="url(#c4)"><rect x="430" y="270" width="150" height="30" fill="url(#shine)" style="animation:shine 2.6s linear infinite 2s"/></g>
+
+    <!-- Node -->
+    <text x="60" y="342" fill="#cbd5e1" font-weight="700">Node.js / Tooling</text>
+    <rect x="430" y="328" width="540" height="14" rx="7" fill="#141a2e"/>
+    <rect class="gl" x="430" y="328" width="443" height="14" rx="7" fill="url(#gpu)" style="animation:growL 1.6s ease forwards 0.6s;clip-path:url(#c5)"/>
+    <text x="1000" y="342" fill="#a78bfa" font-weight="700">82%</text>
+    <clipPath id="c5"><rect x="430" y="328" width="443" height="14" rx="7"/></clipPath>
+    <g clip-path="url(#c5)"><rect x="430" y="320" width="150" height="30" fill="url(#shine)" style="animation:shine 2.6s linear infinite 2.5s"/></g>
+  </g>
+
+  <text class="fps" x="60" y="398" font-size="15" fill="#5b6478">full-cycle: userscript &#8594; server &#8594; agent &#8594; back</text>
+  <text class="fps" x="1060" y="398" text-anchor="end" font-size="15" fill="#5b6478">JS&#183;TS&#183;Python&#183;Node</text>
+</svg>

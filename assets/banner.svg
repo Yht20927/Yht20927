@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="340" viewBox="0 0 1100 340">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d16"/>
+      <stop offset="0.55" stop-color="#0e1020"/>
+      <stop offset="1" stop-color="#0b0d16"/>
+    </linearGradient>
+    <linearGradient id="glowL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="titleG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fdf2f8"/>
+      <stop offset="0.5" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="eqGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <filter id="glowT" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .fps{font-family:"Fira Code","Cascadia Code",Menlo,Consolas,monospace}
+    .dim{fill:#5b6478}
+    .soft{fill:#8b95ad}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    @keyframes glitchA{0%,92%,100%{transform:translate(0,0)}94%{transform:translate(-6px,1px)}96%{transform:translate(5px,-1px)}98%{transform:translate(-3px,0)}}
+    @keyframes glitchB{0%,92%,100%{transform:translate(0,0)}93%{transform:translate(6px,-1px)}95%{transform:translate(-5px,1px)}97%{transform:translate(4px,0)}}
+    @keyframes titleFlicker{0%,97%,100%{opacity:1}98%{opacity:0.55}99%{opacity:1}}
+    @keyframes sweep{0%{transform:translateY(-140px)}100%{transform:translateY(480px)}}
+    @keyframes eq{0%,100%{transform:scaleY(0.2)}50%{transform:scaleY(1)}}
+    @keyframes pulseChip{0%,100%{opacity:1}50%{opacity:0.45}}
+    @keyframes dashC{0%{stroke-dashoffset:0}100%{stroke-dashoffset:120}}
+    @keyframes dotp{0%,100%{opacity:1}50%{opacity:0.25}}
+    .eq-bar{transform-box:fill-box;transform-origin:center bottom;animation:eq 1.15s ease-in-out infinite}
+    .blink{animation:blink 1s steps(1) infinite}
+    .sweep{animation:sweep 3.4s linear infinite}
+    .ga{animation:glitchA 3.6s steps(1) infinite}
+    .gb{animation:glitchB 3.6s steps(1) infinite}
+    .tf{animation:titleFlicker 5s steps(1) infinite}
+    .chip{animation:pulseChip 2.4s ease-in-out infinite}
+    .dot{animation:dotp 1.4s ease-in-out infinite}
+    .dash{stroke-dasharray:8 6;animation:dashC 1.2s linear infinite}
+  </style>
+
+  <!-- bg -->
+  <rect width="1100" height="340" fill="url(#bg)"/>
+  <!-- faint scanline overlay -->
+  <g class="sweep" opacity="0.5">
+    <rect x="-40" y="0" width="1180" height="90" fill="url(#eqGlow)"/>
+  </g>
+
+  <!-- corner brackets -->
+  <g stroke="#22d3ee" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M26 54 V30 H50"/>
+    <path d="M1050 54 V30 H1026"/>
+    <path d="M26 286 V310 H50"/>
+    <path d="M1050 286 V310 H1026"/>
+  </g>
+
+  <!-- top status bar -->
+  <text class="fps" x="34" y="24" font-size="15" fill="#8b95ad" letter-spacing="1">[ YHT20927 :: BRIDGE_NEXUS ]</text>
+  <text class="fps" x="760" y="24" font-size="15" fill="#8b95ad" letter-spacing="1">PORT 443</text>
+  <circle class="dot" cx="876" cy="20" r="3" fill="#4ade80"/>
+  <text class="fps" x="886" y="24" font-size="15" fill="#4ade80" letter-spacing="1">SECURE</text>
+  <text class="fps" x="1028" y="24" font-size="15" fill="#8b95ad" letter-spacing="0">ID@0x07</text>
+
+  <!-- glitch copies -->
+  <text class="fps ga" x="72" y="150" font-size="120" font-weight="800" fill="#22d3ee" opacity="0.7" filter="url(#glowT)">YHT20927</text>
+  <text class="fps gb" x="72" y="150" font-size="120" font-weight="800" fill="#f472b6" opacity="0.7" filter="url(#glowT)">YHT20927</text>
+  <text class="fps tf" x="72" y="150" font-size="120" font-weight="800" fill="url(#titleG)" filter="url(#soft)">YHT20927</text>
+
+  <!-- neon underline -->
+  <rect x="74" y="168" width="560" height="4" rx="2" fill="url(#glowL)"/>
+  <rect class="dash" x="74" y="168" width="560" height="2" rx="1" fill="#e2e8f0" opacity="0.6"/>
+
+  <!-- subtitle -->
+  <text class="fps" x="74" y="212" font-size="30" letter-spacing="2" fill="#f472b6" font-weight="600">BRIDGE FRAMEWORK</text>
+  <text class="fps" x="74" y="246" font-size="22" fill="#cbd5e1" letter-spacing="1">REAL BROWSER  &#8596;  BRIDGE-SERVER  &#8596;  LLM AGENT</text>
+  <text class="fps" x="74" y="278" font-size="17" fill="#8b95ad">userscript-driven automation · anti-detect · humanized persona</text>
+  <rect x="838" y="254" width="9" height="20" fill="#e2e8f0" class="blink"/>
+
+  <!-- right equalizer -->
+  <g transform="translate(762,126)">
+    <circle r="64" fill="url(#eqGlow)"/>
+    <text class="fps" x="0" y="-78" text-anchor="middle" font-size="13" fill="#5b6478" letter-spacing="1">SIGNAL.MONITOR</text>
+    <g fill="#22d3ee" filter="url(#soft)">
+      <rect class="eq-bar" x="-44" y="20" width="7" height="44" rx="2"/>
+      <rect class="eq-bar" x="-30" y="8"  width="7" height="56" rx="2" style="animation-delay:-0.2s"/>
+      <rect class="eq-bar" x="-16" y="-4" width="7" height="68" rx="2" style="animation-delay:-0.4s"/>
+      <rect class="eq-bar" x="-2"  y="12" width="7" height="52" rx="2" style="animation-delay:-0.6s"/>
+      <rect class="eq-bar" x="12"  y="-8" width="7" height="72" rx="2" style="animation-delay:-0.1s"/>
+      <rect class="eq-bar" x="26"  y="10" width="7" height="54" rx="2" style="animation-delay:-0.5s"/>
+      <rect class="eq-bar" x="40"  y="20" width="7" height="44" rx="2" style="animation-delay:-0.3s"/>
+    </g>
+    <text class="fps" x="0" y="92" text-anchor="middle" font-size="14" fill="#22d3ee" letter-spacing="1">151&#9733;</text>
+  </g>
+
+  <!-- stat chips bottom-right -->
+  <g class="fps">
+    <g class="chip"><rect x="742" y="288" width="80" height="30" rx="5" fill="#111527" stroke="#f472b6" stroke-width="1.4"/><text x="782" y="308" text-anchor="middle" font-size="15" fill="#f472b6">28&#127859;</text></g>
+    <g class="chip" style="animation-delay:-0.6s"><rect x="830" y="288" width="80" height="30" rx="5" fill="#111527" stroke="#a78bfa" stroke-width="1.4"/><text x="870" y="308" text-anchor="middle" font-size="15" fill="#a78bfa">9 REPO</text></g>
+    <g class="chip" style="animation-delay:-1.1s"><rect x="918" y="288" width="80" height="30" rx="5" fill="#111527" stroke="#22d3ee" stroke-width="1.4"/><text x="958" y="308" text-anchor="middle" font-size="15" fill="#22d3ee">9 FOL</text></g>
+  </g>
+</svg>

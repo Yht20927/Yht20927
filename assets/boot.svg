@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d16"/><stop offset="0.5" stop-color="#0d1020"/><stop offset="1" stop-color="#0b0d16"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="scanG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.06"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .fps{font-family:"Fira Code","Cascadia Code",Menlo,Consolas,monospace}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    @keyframes led{0%,100%{opacity:1}50%{opacity:0.25}}
+    @keyframes lineIn{0%{opacity:0;transform:translateX(-16px)}6%{opacity:1;transform:translateX(0)}100%{opacity:1}}
+    @keyframes scan{0%{transform:translateY(-90px)}100%{transform:translateY(700px)}}
+    .blink{animation:blink 0.9s steps(1) infinite}
+    .led{animation:led 1.3s ease-in-out infinite}
+    .scan{animation:scan 4.5s linear infinite}
+    .li{opacity:0;animation:lineIn 9s ease forwards}
+  </style>
+
+  <rect width="1100" height="560" fill="url(#bg)"/>
+  <!-- scanline -->
+  <g class="scan"><rect x="-40" y="0" width="1180" height="160" fill="url(#scanG)"/></g>
+
+  <!-- window -->
+  <rect x="44" y="26" width="1012" height="508" rx="14" fill="#0a0c16" stroke="#1f2b46"/>
+  <rect x="44" y="26" width="1012" height="508" rx="14" fill="none" stroke="url(#bar)" stroke-opacity="0.5"/>
+  <!-- title bar -->
+  <rect x="44" y="26" width="1012" height="46" rx="14" fill="#0e1220"/>
+  <rect x="44" y="58" width="1012" height="14" fill="#0e1220"/>
+  <circle cx="74" cy="49" r="7" fill="#f87171"/><circle cx="98" cy="49" r="7" fill="#fbbf24"/><circle cx="122" cy="49" r="7" fill="#4ade80"/>
+  <text class="fps" x="150" y="55" font-size="17" fill="#8b95ad" letter-spacing="1">yht20927@bridge: ~/nexus</text>
+  <text class="fps" x="1004" y="55" text-anchor="end" font-size="15" fill="#5b6478">v0.7.0-cyber</text>
+
+  <!-- boot lines -->
+  <g class="fps" font-size="20">
+    <text class="li" style="animation-delay:0.2s" x="80" y="120" fill="#8b95ad">> init bridge_framework  &#183;&#183;&#183;&#183;&#183; <tspan fill="#4ade80">OK</tspan></text>
+    <text class="li" style="animation-delay:0.7s" x="80" y="156" fill="#8b95ad">> mount userscript layer  &#183; <tspan fill="#4ade80">hooks armed</tspan></text>
+    <text class="li" style="animation-delay:1.2s" x="80" y="192" fill="#8b95ad">> open wss://bridge-core  &#183; <tspan fill="#22d3ee">state sync @5 nodes</tspan></text>
+    <text class="li" style="animation-delay:1.7s" x="80" y="228" fill="#8b95ad">> load agent brain  &#183;&#183;&#183;&#183;&#183; <tspan fill="#a78bfa">llm.persona=humanized</tspan></text>
+    <text class="li" style="animation-delay:2.2s" x="80" y="264" fill="#8b95ad">> enable risk-control guard <tspan fill="#4ade80">pass</tspan></text>
+    <text class="li" style="animation-delay:2.7s" x="80" y="300" fill="#8b95ad">> pipeline: ai-video / memory  <tspan fill="#f472b6">running</tspan></text>
+    <text class="li" style="animation-delay:3.2s" x="80" y="336" fill="#8b95ad">> cross-platform matrix <tspan fill="#22d3ee">douyin xhs boss ths tiktok</tspan></text>
+    <text class="li" style="animation-delay:3.7s" x="80" y="372" fill="#8b95ad">> handshake done in <tspan fill="#22d3ee">1.42s</tspan>  <tspan fill="#5b6478">(real browser, not simulation)</tspan></text>
+  </g>
+
+  <!-- status LEDs top-right inside window -->
+  <g class="fps">
+    <circle class="led" cx="780" cy="120" r="4" fill="#22d3ee"/><text x="794" y="125" font-size="14" fill="#5b6478">US</text>
+    <circle class="led" style="animation-delay:-0.4s" cx="848" cy="120" r="4" fill="#f472b6"/><text x="862" y="125" font-size="14" fill="#5b6478">WS</text>
+    <circle class="led" style="animation-delay:-0.8s" cx="916" cy="120" r="4" fill="#a78bfa"/><text x="930" y="125" font-size="14" fill="#5b6478">AI</text>
+  </g>
+
+  <!-- progress bar -->
+  <rect x="80" y="410" width="820" height="10" rx="5" fill="#141a2e"/>
+  <rect x="80" y="410" width="820" height="10" rx="5" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="820" dur="4s" fill="freeze"/>
+  </rect>
+  <text class="fps" x="80" y="450" font-size="16" fill="#5b6478">deploy nodes</text>
+  <text class="fps" x="900" y="450" text-anchor="end" font-size="16" fill="#22d3ee">100%</text>
+  <!-- blinking status line -->
+  <text class="fps" x="80" y="496" font-size="20" fill="#4ade80" font-weight="700">ALL SYSTEMS ONLINE</text>
+  <rect class="blink" x="330" y="476" width="12" height="24" fill="#4ade80"/>
+  <text class="fps" x="360" y="496" font-size="20" fill="#8b95ad">ready for real-world ops <tspan fill="#5b6478">&#183; 5 platforms live &#183; 151&#9733;</tspan></text>
+</svg>

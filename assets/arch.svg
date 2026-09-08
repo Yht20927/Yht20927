@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="330" viewBox="0 0 1100 330">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d16"/><stop offset="0.5" stop-color="#0d1020"/><stop offset="1" stop-color="#0b0d16"/>
+    </linearGradient>
+    <linearGradient id="gcy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#0891b2"/></linearGradient>
+    <linearGradient id="gmg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#be185d"/></linearGradient>
+    <linearGradient id="gpu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#6d28d9"/></linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <style>
+    .fps{font-family:"Fira Code","Cascadia Code",Menlo,Consolas,monospace}
+    @keyframes dashmove{to{stroke-dashoffset:-34}}
+    @keyframes packet{0%{opacity:0}8%{opacity:1}92%{opacity:1}100%{opacity:0}}
+    @keyframes pulseN{0%,100%{opacity:0.5}50%{opacity:1}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    @keyframes gridm{0%{transform:translate(0,0)}100%{transform:translate(30px,30px)}}
+    .fps2{font-family:monospace}
+    .pulse{animation:pulseN 2.2s ease-in-out infinite}
+    .blink{animation:blink 1s steps(1) infinite}
+    .ldash{stroke-dasharray:6 10;animation:dashmove 0.9s linear infinite}
+  </style>
+
+  <rect width="1100" height="330" fill="url(#bg)"/>
+  <text class="fps" x="40" y="34" font-size="17" letter-spacing="2" fill="#a78bfa" font-weight="700">ARCHITECTURE :: BRIDGE FLOW</text>
+  <text class="fps" x="1060" y="34" text-anchor="end" font-size="15" fill="#5b6478">JSON &#8596; WSS</text>
+
+  <!-- nodes -->
+  <!-- BROWSER -->
+  <g transform="translate(60,84)">
+    <rect width="260" height="170" rx="14" fill="#0a1020" stroke="#22d3ee" stroke-opacity="0.7"/>
+    <rect x="0" y="0" width="260" height="8" rx="4" fill="url(#gcy)"/>
+    <text class="fps" x="24" y="46" font-size="24" font-weight="800" fill="#67e8f9">BROWSER</text>
+    <text class="fps" x="24" y="74" font-size="14" fill="#8b95ad">userscript &#183; real actions</text>
+    <g class="pulse"><circle cx="206" cy="40" r="16" fill="none" stroke="#22d3ee" stroke-width="2"/><circle cx="206" cy="40" r="4" fill="#22d3ee"/></g>
+    <text class="fps" x="24" y="112" font-size="15" fill="#5b6478">&#9654; 真实操作 / 采集</text>
+    <text class="fps" x="24" y="140" font-size="14" fill="#3f4a63">DOM 驱动&#183;风控环境</text>
+  </g>
+
+  <!-- BRIDGE-SERVER -->
+  <g transform="translate(420,84)">
+    <rect width="260" height="170" rx="14" fill="#0c0a1c" stroke="#f472b6" stroke-opacity="0.7"/>
+    <rect x="0" y="0" width="260" height="8" rx="4" fill="url(#gmg)"/>
+    <text class="fps" x="24" y="46" font-size="24" font-weight="800" fill="#f0abfc">BRIDGE-SERVER</text>
+    <text class="fps" x="24" y="74" font-size="14" fill="#8b95ad">state &#183; sync &#183; control</text>
+    <g class="pulse" style="animation-delay:-0.7s"><circle cx="206" cy="40" r="16" fill="none" stroke="#f472b6" stroke-width="2"/><circle cx="206" cy="40" r="4" fill="#f472b6"/></g>
+    <text class="fps" x="24" y="112" font-size="15" fill="#5b6478">&#9698;&#9698; 中枢 / 状态管理</text>
+    <text class="fps" x="24" y="140" font-size="14" fill="#3f4a63">WebSocket &#183; 会话仓库</text>
+  </g>
+
+  <!-- AI AGENT -->
+  <g transform="translate(780,84)">
+    <rect width="260" height="170" rx="14" fill="#0a0a20" stroke="#a78bfa" stroke-opacity="0.7"/>
+    <rect x="0" y="0" width="260" height="8" rx="4" fill="url(#gpu)"/>
+    <text class="fps" x="24" y="46" font-size="24" font-weight="800" fill="#c4b5fd">AI AGENT</text>
+    <text class="fps" x="24" y="74" font-size="14" fill="#8b95ad">llm &#183; decision &#183; persona</text>
+    <g class="pulse" style="animation-delay:-1.4s"><circle cx="206" cy="40" r="16" fill="none" stroke="#a78bfa" stroke-width="2"/><circle cx="206" cy="40" r="4" fill="#a78bfa"/></g>
+    <text class="fps" x="24" y="112" font-size="15" fill="#5b6478">&#9824; 决策 / 拟人化</text>
+    <text class="fps" x="24" y="140" font-size="14" fill="#3f4a63">reasoning &#183; strategy</text>
+  </g>
+
+  <!-- connectors -->
+  <g stroke="#3f4a63" stroke-width="2">
+    <line x1="320" y1="120" x2="420" y2="120"/>
+    <line x1="680" y1="120" x2="780" y2="120"/>
+    <line x1="320" y1="180" x2="420" y2="180"/>
+    <line x1="680" y1="180" x2="780" y2="180"/>
+  </g>
+  <!-- data streams -->
+  <line class="ldash" x1="322" y1="120" x2="418" y2="120" stroke="#22d3ee" stroke-width="2.4"/>
+  <line class="ldash" x1="682" y1="120" x2="778" y2="120" stroke="#22d3ee" stroke-width="2.4"/>
+  <line class="ldash" x1="322" y1="180" x2="418" y2="180" stroke="#f472b6" stroke-width="2.4" style="animation-direction:reverse"/>
+  <line class="ldash" x1="682" y1="180" x2="778" y2="180" stroke="#f472b6" stroke-width="2.4" style="animation-direction:reverse"/>
+
+  <g class="fps" font-size="12" fill="#67e8f9">
+    <text x="356" y="102" text-anchor="middle">inspect</text>
+    <text x="712" y="102" text-anchor="middle">reason</text>
+  </g>
+  <g class="fps" font-size="12" fill="#f0abfc">
+    <text x="356" y="214" text-anchor="middle">act</text>
+    <text x="712" y="214" text-anchor="middle">reply</text>
+  </g>
+
+  <!-- flying packets A->B top -->
+  <circle r="5" fill="#22d3ee" filter="url(#soft)">
+    <animateMotion dur="1.4s" repeatCount="indefinite" path="M320,120 L420,120" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#67e8f9">
+    <animateMotion dur="1.4s" begin="0.7s" repeatCount="indefinite" path="M320,120 L420,120"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="1.4s" begin="0.7s" repeatCount="indefinite"/>
+  </circle>
+  <!-- packets B->C top -->
+  <circle r="5" fill="#22d3ee" filter="url(#soft)">
+    <animateMotion dur="1.4s" begin="0.35s" repeatCount="indefinite" path="M680,120 L780,120"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="1.4s" begin="0.35s" repeatCount="indefinite"/>
+  </circle>
+  <!-- packets C->B->A bottom -->
+  <circle r="5" fill="#f472b6" filter="url(#soft)">
+    <animateMotion dur="1.6s" repeatCount="indefinite" path="M780,180 L680,180"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#f0abfc">
+    <animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M780,180 L680,180"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="1.6s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#f472b6" filter="url(#soft)">
+    <animateMotion dur="1.6s" begin="0.4s" repeatCount="indefinite" path="M420,180 L320,180"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="1.6s" begin="0.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- footer of diagram -->
+  <text class="fps" x="40" y="292" font-size="15" fill="#5b6478">真实浏览器层  &#8594;  通信 / 状态中枢  &#8594;  LLM 决策层</text>
+  <text class="fps" x="1060" y="292" text-anchor="end" font-size="15" fill="#f472b6">anti-detection <tspan class="blink" fill="#4ade80">&#9611;</tspan></text>
+</svg>

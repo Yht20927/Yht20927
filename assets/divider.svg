@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="30" viewBox="0 0 1100 30">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="0.7" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes comet{0%{transform:translateX(-60px)}100%{transform:translateX(1160px)}}
+    @keyframes pulse{0%,100%{opacity:0.25}50%{opacity:0.8}}
+    .comet{animation:comet 2.6s linear infinite}
+    .c2{animation:comet 2.6s linear infinite 1.3s}
+  </style>
+  <line x1="40" y1="15" x2="1060" y2="15" stroke="url(#line)" stroke-width="2"/>
+  <!-- traveling glow dots -->
+  <g filter="url(#f)">
+    <defs><filter id="f"><feGaussianBlur stdDeviation="3"/></filter></defs>
+    <circle class="comet" r="3" cy="15" cx="40" fill="#22d3ee"/>
+    <circle class="c2" r="3" cy="15" cx="40" fill="#f472b6"/>
+  </g>
+  <rect x="0" y="0" width="1100" height="30" fill="none"/>
+</svg>
