@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d16"/>
+      <stop offset="0.5" stop-color="#0e1020"/>
+      <stop offset="1" stop-color="#0b0d16"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="scan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+    <clipPath id="panelClip"><rect x="1" y="1" width="1098" height="398" rx="12"/></clipPath>
+
+    <!-- one clip rect per console line; widths animate in lockstep (16s SMIL loop) -->
+    <clipPath id="t1" clipPathUnits="userSpaceOnUse"><rect x="30" y="85" width="0" height="27">
+      <animate attributeName="width" values="0;410;410" keyTimes="0;0.06;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t2" clipPathUnits="userSpaceOnUse"><rect x="30" y="117" width="0" height="27">
+      <animate attributeName="width" values="0;0;525;525" keyTimes="0;0.06;0.13;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t3" clipPathUnits="userSpaceOnUse"><rect x="30" y="149" width="0" height="27">
+      <animate attributeName="width" values="0;0;365;365" keyTimes="0;0.13;0.20;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t4" clipPathUnits="userSpaceOnUse"><rect x="30" y="181" width="0" height="27">
+      <animate attributeName="width" values="0;0;500;500" keyTimes="0;0.20;0.27;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t5" clipPathUnits="userSpaceOnUse"><rect x="30" y="213" width="0" height="27">
+      <animate attributeName="width" values="0;0;393;393" keyTimes="0;0.27;0.34;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t6" clipPathUnits="userSpaceOnUse"><rect x="30" y="245" width="0" height="27">
+      <animate attributeName="width" values="0;0;394;394" keyTimes="0;0.34;0.42;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t7" clipPathUnits="userSpaceOnUse"><rect x="30" y="277" width="0" height="27">
+      <animate attributeName="width" values="0;0;480;480" keyTimes="0;0.42;0.49;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t8" clipPathUnits="userSpaceOnUse"><rect x="30" y="309" width="0" height="27">
+      <animate attributeName="width" values="0;0;500;500" keyTimes="0;0.49;0.58;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+
+  <style>
+    .fps{font-family:"Fira Code","Cascadia Code",Menlo,Consolas,monospace}
+    .cjk{font-family:"Fira Code","PingFang SC","Microsoft YaHei",Menlo,monospace}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.25}}
+    @keyframes sweep{0%{transform:translateY(-60px)}100%{transform:translateY(430px)}}
+    @keyframes dashC{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-80}}
+    .blink{animation:blink 1s steps(1) infinite}
+    .sweep{animation:sweep 4.2s linear infinite}
+    .p1{animation:pulse 1.6s ease-in-out infinite}
+    .p2{animation:pulse 1.9s ease-in-out infinite;animation-delay:-0.5s}
+    .p3{animation:pulse 2.2s ease-in-out infinite;animation-delay:-1.1s}
+    .p4{animation:pulse 1.7s ease-in-out infinite;animation-delay:-0.8s}
+    .p5{animation:pulse 2.0s ease-in-out infinite;animation-delay:-0.3s}
+    .dash{stroke-dasharray:6 6;animation:dashC 1.6s linear infinite}
+  </style>
+
+  <g clip-path="url(#panelClip)">
+    <rect width="1100" height="400" fill="url(#bg)"/>
+
+    <!-- traveling scan band -->
+    <g class="sweep" opacity="0.55">
+      <rect x="-40" y="0" width="1180" height="120" fill="url(#scan)"/>
+    </g>
+
+    <!-- title bar -->
+    <rect x="0" y="0" width="1100" height="40" fill="#111527"/>
+    <rect x="0" y="20" width="1100" height="20" fill="#111527"/>
+    <line x1="0" y1="40.5" x2="1100" y2="40.5" stroke="#1e2b45"/>
+    <circle cx="26" cy="20" r="6" fill="#f472b6"/>
+    <circle cx="46" cy="20" r="6" fill="#a78bfa"/>
+    <circle cx="66" cy="20" r="6" fill="#22d3ee"/>
+    <text class="fps" x="88" y="25" font-size="15" fill="#8b95ad" letter-spacing="1">bridge@nexus — live session — 84×22</text>
+    <circle class="p1" cx="936" cy="20" r="4" fill="#4ade80"/>
+    <text class="fps" x="948" y="25" font-size="14" fill="#4ade80" letter-spacing="1">ATTACHED</text>
+
+    <!-- console -->
+    <g>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.86;0.92;1" dur="16s" repeatCount="indefinite"/>
+      <g class="fps" font-size="16">
+        <g clip-path="url(#t1)">
+          <text x="32" y="104"><tspan fill="#22d3ee">$ </tspan><tspan fill="#e2e8f0">bridge attach --node douyin --userscript</tspan></text>
+        </g>
+        <g clip-path="url(#t2)">
+          <text x="32" y="136"><tspan fill="#4ade80">[ok] </tspan><tspan fill="#8b95ad">chrome 131 · wss://127.0.0.1:7788 · session alive</tspan></text>
+        </g>
+        <g clip-path="url(#t3)">
+          <text x="32" y="168"><tspan fill="#22d3ee">$ </tspan><tspan fill="#e2e8f0">bridge crawl --depth full --nested</tspan></text>
+        </g>
+        <g clip-path="url(#t4)">
+          <text x="32" y="200"><tspan fill="#4ade80">[ok] </tspan><tspan fill="#a78bfa">1,284</tspan><tspan fill="#8b95ad"> comments · </tspan><tspan fill="#a78bfa">37</tspan><tspan fill="#8b95ad"> nested threads · 0 captcha</tspan></text>
+        </g>
+        <g clip-path="url(#t5)">
+          <text x="32" y="232"><tspan fill="#22d3ee">$ </tspan><tspan fill="#e2e8f0">llm reply --persona human --risk-guard</tspan></text>
+        </g>
+        <g clip-path="url(#t6)">
+          <text x="32" y="264"><tspan fill="#f472b6">[..] </tspan><tspan fill="#8b95ad">jitter 1.2s–4.8s · risk 0.03 </tspan><tspan fill="#4ade80">→ pass</tspan></text>
+        </g>
+        <g clip-path="url(#t7)">
+          <text x="32" y="296"><tspan fill="#22d3ee">$ </tspan><tspan fill="#e2e8f0">video make --idea idea.md --tts --align whisper</tspan></text>
+        </g>
+        <g clip-path="url(#t8)">
+          <text x="32" y="328"><tspan fill="#4ade80">[ok] </tspan><tspan fill="#8b95ad">script → voice → align → visual → </tspan><tspan fill="#22d3ee">4k.mp4</tspan></text>
+        </g>
+      </g>
+
+      <!-- cursor appears once the last line lands -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.58;0.60;1" dur="16s" repeatCount="indefinite"/>
+        <rect class="blink" x="468" y="314" width="9" height="18" fill="#22d3ee"/>
+      </g>
+    </g>
+
+    <!-- node status panel -->
+    <rect x="784" y="58" width="284" height="278" rx="10" fill="#0f1424" stroke="#1e2b45"/>
+    <text class="fps" x="802" y="84" font-size="13" fill="#5b6478" letter-spacing="2">NODE STATUS</text>
+    <line x1="802" y1="94" x2="1050" y2="94" stroke="#1e2b45"/>
+    <g class="fps" font-size="15">
+      <circle class="p1" cx="804" cy="117" r="4" fill="#f472b6"/>
+      <text x="818" y="122" fill="#cbd5e1">douyin</text>
+      <g fill="#f472b6">
+        <rect x="1000" y="114" width="6" height="6" rx="1.5"/><rect x="1012" y="111" width="6" height="9" rx="1.5"/>
+        <rect x="1024" y="108" width="6" height="12" rx="1.5"/><rect x="1036" y="105" width="6" height="15" rx="1.5"/>
+      </g>
+
+      <circle class="p2" cx="804" cy="155" r="4" fill="#f472b6"/>
+      <text x="818" y="160" fill="#cbd5e1">xiaohongshu</text>
+      <g fill="#f472b6">
+        <rect x="1000" y="152" width="6" height="6" rx="1.5"/><rect x="1012" y="149" width="6" height="9" rx="1.5"/>
+        <rect x="1024" y="146" width="6" height="12" rx="1.5"/><rect x="1036" y="145" width="6" height="13" rx="1.5" opacity="0.35"/>
+      </g>
+
+      <circle class="p3" cx="804" cy="193" r="4" fill="#a78bfa"/>
+      <text x="818" y="198" fill="#cbd5e1">boss-zhipin</text>
+      <g fill="#a78bfa">
+        <rect x="1000" y="190" width="6" height="6" rx="1.5"/><rect x="1012" y="187" width="6" height="9" rx="1.5"/>
+        <rect x="1024" y="184" width="6" height="12" rx="1.5"/><rect x="1036" y="181" width="6" height="15" rx="1.5"/>
+      </g>
+
+      <circle class="p4" cx="804" cy="231" r="4" fill="#22d3ee"/>
+      <text x="818" y="236" fill="#cbd5e1">tiktok</text>
+      <g fill="#22d3ee">
+        <rect x="1000" y="228" width="6" height="6" rx="1.5"/><rect x="1012" y="225" width="6" height="9" rx="1.5"/>
+        <rect x="1024" y="224" width="6" height="10" rx="1.5" opacity="0.35"/><rect x="1036" y="223" width="6" height="11" rx="1.5" opacity="0.35"/>
+      </g>
+
+      <circle class="p5" cx="804" cy="269" r="4" fill="#4ade80"/>
+      <text x="818" y="274" fill="#cbd5e1">ths-quant</text>
+      <g fill="#4ade80">
+        <rect x="1000" y="266" width="6" height="6" rx="1.5"/><rect x="1012" y="263" width="6" height="9" rx="1.5"/>
+        <rect x="1024" y="260" width="6" height="12" rx="1.5"/><rect x="1036" y="259" width="6" height="13" rx="1.5" opacity="0.35"/>
+      </g>
+    </g>
+
+    <line x1="802" y1="292" x2="1050" y2="292" stroke="#1e2b45"/>
+    <text class="fps" x="802" y="318" font-size="13" fill="#5b6478" letter-spacing="1">LINKS</text>
+    <text class="fps" x="1050" y="318" text-anchor="end" font-size="13" fill="#22d3ee" letter-spacing="1">5 ACTIVE</text>
+
+    <!-- bottom status bar -->
+    <line x1="0" y1="352.5" x2="1100" y2="352.5" stroke="#1e2b45"/>
+    <rect x="0" y="353" width="1100" height="47" fill="#0b0d16" opacity="0.75"/>
+    <text class="fps" x="32" y="380" font-size="14" fill="#5b6478">bridge@nexus:~/ops</text>
+    <rect x="196" y="369" width="1" height="14" fill="#1e2b45"/>
+    <text class="fps" x="210" y="380" font-size="14" fill="#8b95ad">userscript · wss · llm · asr</text>
+    <rect x="676" y="367" width="9" height="15" fill="#22d3ee" class="blink"/>
+    <text class="fps" x="1068" y="380" text-anchor="end" font-size="14" letter-spacing="1"><tspan fill="#22d3ee">NO SIMULATION</tspan><tspan fill="#5b6478"> · real chrome · 0 headless</tspan></text>
+
+    <!-- corner brackets -->
+    <g stroke="#22d3ee" stroke-width="3" fill="none" opacity="0.55">
+      <path d="M22 54 V26 H50"/>
+      <path d="M1078 54 V26 H1050"/>
+    </g>
+
+    <rect x="1" y="1" width="1098" height="398" rx="12" fill="none" stroke="#1e2b45"/>
+    <rect x="34" y="42" width="200" height="3" rx="1.5" fill="url(#bar)" opacity="0.9" class="dash"/>
+  </g>
+</svg>

@@ -65,5 +65,5 @@
   <!-- blinking status line -->
   <text class="fps" x="80" y="496" font-size="20" fill="#4ade80" font-weight="700">ALL SYSTEMS ONLINE</text>
   <rect class="blink" x="330" y="476" width="12" height="24" fill="#4ade80"/>
-  <text class="fps" x="360" y="496" font-size="20" fill="#8b95ad">ready for real-world ops <tspan fill="#5b6478">&#183; 5 platforms live &#183; 151&#9733;</tspan></text>
+  <text class="fps" x="360" y="496" font-size="20" fill="#8b95ad">ready for real-world ops <tspan fill="#5b6478">&#183; 5 platforms live &#183; 168&#9733;</tspan></text>
 </svg>

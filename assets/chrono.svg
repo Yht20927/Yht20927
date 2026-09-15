@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="330" viewBox="0 0 1100 330">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d16"/>
+      <stop offset="0.5" stop-color="#0d1020"/>
+      <stop offset="1" stop-color="#0b0d16"/>
+    </linearGradient>
+    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.2"/>
+      <stop offset="0.5" stop-color="#a78bfa" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="soft" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="2.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    .fps{font-family:"Fira Code","Cascadia Code",Menlo,Consolas,monospace}
+    .cn{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Fira Code",sans-serif}
+    @keyframes ping{0%{opacity:0;transform:scale(1)}7%{opacity:0.85}34%{opacity:0}100%{opacity:0}}
+    @keyframes comet{0%{transform:translateX(0);opacity:0}6%{opacity:1}94%{opacity:1}100%{transform:translateX(880px);opacity:0}}
+    @keyframes dashC{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-28}}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+    .ring{transform-box:fill-box;transform-origin:center;animation:ping 6s linear infinite}
+    .comet{animation:comet 6s linear infinite}
+    .dash{stroke-dasharray:4 8;animation:dashC 1.3s linear infinite}
+    .pl{animation:pulse 2.2s ease-in-out infinite}
+  </style>
+
+  <rect width="1100" height="330" fill="url(#bg)"/>
+
+  <!-- corner brackets -->
+  <g stroke="#22d3ee" stroke-width="2.6" fill="none" opacity="0.45">
+    <path d="M20 40 V20 H42"/>
+    <path d="M1080 40 V20 H1058"/>
+    <path d="M20 290 V310 H42"/>
+    <path d="M1080 290 V310 H1058"/>
+  </g>
+
+  <!-- header -->
+  <text class="fps" x="34" y="32" font-size="18" font-weight="700" letter-spacing="2" fill="#a78bfa">MISSION LOG</text>
+  <text class="fps" x="196" y="32" font-size="14" fill="#5b6478">2026.04 → 2026.08</text>
+  <text class="cn" x="1066" y="32" text-anchor="end" font-size="14" fill="#8b95ad">8 个节点 · 全部真实浏览器驱动</text>
+  <line x1="34" y1="44" x2="1066" y2="44" stroke="#1e2b45"/>
+
+  <!-- axis -->
+  <line x1="110" y1="170" x2="990" y2="170" stroke="#1e2b45" stroke-width="3"/>
+  <line class="dash" x1="110" y1="170" x2="990" y2="170" stroke="url(#axis)" stroke-width="3"/>
+  <g filter="url(#soft)">
+    <circle class="comet" cx="110" cy="170" r="4.5" fill="#22d3ee"/>
+  </g>
+
+  <!-- ============ above-axis cards (even index) ============ -->
+  <g class="fps">
+    <!-- 0 · my-claude-memory -->
+    <g>
+      <rect class="ring" x="104" y="164" width="12" height="12" rx="6" fill="none" stroke="#22d3ee" stroke-width="2" style="animation-delay:0s"/>
+      <line x1="110" y1="126" x2="110" y2="164" stroke="#1e2b45"/>
+      <circle cx="110" cy="170" r="6" fill="#0b0d16" stroke="#22d3ee" stroke-width="2"/>
+      <rect x="20" y="62" width="180" height="64" rx="9" fill="#0f1424" stroke="#22d3ee" stroke-width="1.2"/>
+      <text x="30" y="88" font-size="16">🧠</text>
+      <text x="52" y="88" font-size="13" fill="#e2e8f0">my-claude-memory</text>
+      <text x="30" y="110" font-size="11" fill="#22d3ee" letter-spacing="1">2026-04-27</text>
+      <text class="cn" x="190" y="110" text-anchor="end" font-size="12" fill="#5b6478">记忆层</text>
+    </g>
+    <!-- 2 · douyin-cli -->
+    <g>
+      <rect class="ring" x="355" y="164" width="12" height="12" rx="6" fill="none" stroke="#22d3ee" stroke-width="2" style="animation-delay:-4.5s"/>
+      <line x1="361" y1="126" x2="361" y2="164" stroke="#1e2b45"/>
+      <circle cx="361" cy="170" r="6" fill="#0b0d16" stroke="#22d3ee" stroke-width="2"/>
+      <rect x="271" y="62" width="180" height="64" rx="9" fill="#0f1424" stroke="#22d3ee" stroke-width="1.2"/>
+      <text x="281" y="88" font-size="16">🎵</text>
+      <text x="303" y="88" font-size="13" fill="#e2e8f0">douyin-cli</text>
+      <text x="281" y="110" font-size="11" fill="#22d3ee" letter-spacing="1">2026-06-01</text>
+      <text class="cn" x="441" y="110" text-anchor="end" font-size="12" fill="#5b6478">抖音</text>
+    </g>
+    <!-- 4 · xiaohongshu-cli -->
+    <g>
+      <rect class="ring" x="607" y="164" width="12" height="12" rx="6" fill="none" stroke="#a78bfa" stroke-width="2" style="animation-delay:-3s"/>
+      <line x1="613" y1="126" x2="613" y2="164" stroke="#1e2b45"/>
+      <circle cx="613" cy="170" r="6" fill="#0b0d16" stroke="#a78bfa" stroke-width="2"/>
+      <rect x="523" y="62" width="180" height="64" rx="9" fill="#0f1424" stroke="#a78bfa" stroke-width="1.2"/>
+      <text x="533" y="88" font-size="16">📕</text>
+      <text x="555" y="88" font-size="13" fill="#e2e8f0">xiaohongshu-cli</text>
+      <text x="533" y="110" font-size="11" fill="#a78bfa" letter-spacing="1">2026-06-13</text>
+      <text class="cn" x="693" y="110" text-anchor="end" font-size="12" fill="#5b6478">小红书</text>
+    </g>
+    <!-- 6 · tiktok-cli -->
+    <g>
+      <rect class="ring" x="858" y="164" width="12" height="12" rx="6" fill="none" stroke="#f472b6" stroke-width="2" style="animation-delay:-1.5s"/>
+      <line x1="864" y1="126" x2="864" y2="164" stroke="#1e2b45"/>
+      <circle cx="864" cy="170" r="6" fill="#0b0d16" stroke="#f472b6" stroke-width="2"/>
+      <rect x="774" y="62" width="180" height="64" rx="9" fill="#0f1424" stroke="#f472b6" stroke-width="1.2"/>
+      <text x="784" y="88" font-size="16">🎬</text>
+      <text x="806" y="88" font-size="13" fill="#e2e8f0">tiktok-cli</text>
+      <text x="784" y="110" font-size="11" fill="#f472b6" letter-spacing="1">2026-08-13</text>
+      <text class="cn" x="944" y="110" text-anchor="end" font-size="12" fill="#5b6478">海外</text>
+    </g>
+  </g>
+
+  <!-- ============ below-axis cards (odd index) ============ -->
+  <g class="fps">
+    <!-- 1 · markdown-to -->
+    <g>
+      <rect class="ring" x="230" y="164" width="12" height="12" rx="6" fill="none" stroke="#22d3ee" stroke-width="2" style="animation-delay:-5.25s"/>
+      <line x1="236" y1="176" x2="236" y2="214" stroke="#1e2b45"/>
+      <circle cx="236" cy="170" r="6" fill="#0b0d16" stroke="#22d3ee" stroke-width="2"/>
+      <rect x="146" y="214" width="180" height="64" rx="9" fill="#0f1424" stroke="#22d3ee" stroke-width="1.2"/>
+      <text x="156" y="240" font-size="16">📝</text>
+      <text x="178" y="240" font-size="13" fill="#e2e8f0">markdown-to</text>
+      <text x="156" y="262" font-size="11" fill="#22d3ee" letter-spacing="1">2026-05-21</text>
+      <text class="cn" x="316" y="262" text-anchor="end" font-size="12" fill="#5b6478">效率</text>
+    </g>
+    <!-- 3 · douyin-living -->
+    <g>
+      <rect class="ring" x="481" y="164" width="12" height="12" rx="6" fill="none" stroke="#a78bfa" stroke-width="2" style="animation-delay:-3.75s"/>
+      <line x1="487" y1="176" x2="487" y2="214" stroke="#1e2b45"/>
+      <circle cx="487" cy="170" r="6" fill="#0b0d16" stroke="#a78bfa" stroke-width="2"/>
+      <rect x="397" y="214" width="180" height="64" rx="9" fill="#0f1424" stroke="#a78bfa" stroke-width="1.2"/>
+      <text x="407" y="240" font-size="16">🎥</text>
+      <text x="429" y="240" font-size="13" fill="#e2e8f0">douyin-living</text>
+      <text x="407" y="262" font-size="11" fill="#a78bfa" letter-spacing="1">2026-06-04</text>
+      <text class="cn" x="567" y="262" text-anchor="end" font-size="12" fill="#5b6478">直播</text>
+    </g>
+    <!-- 5 · BossZhipin-cli -->
+    <g>
+      <rect class="ring" x="733" y="164" width="12" height="12" rx="6" fill="none" stroke="#a78bfa" stroke-width="2" style="animation-delay:-2.25s"/>
+      <line x1="739" y1="176" x2="739" y2="214" stroke="#1e2b45"/>
+      <circle cx="739" cy="170" r="6" fill="#0b0d16" stroke="#a78bfa" stroke-width="2"/>
+      <rect x="649" y="214" width="180" height="64" rx="9" fill="#0f1424" stroke="#a78bfa" stroke-width="1.2"/>
+      <text x="659" y="240" font-size="16">💼</text>
+      <text x="681" y="240" font-size="13" fill="#e2e8f0">BossZhipin-cli</text>
+      <text x="659" y="262" font-size="11" fill="#a78bfa" letter-spacing="1">2026-07-13</text>
+      <text class="cn" x="819" y="262" text-anchor="end" font-size="12" fill="#5b6478">招聘</text>
+    </g>
+    <!-- 7 · ths-cli -->
+    <g>
+      <rect class="ring" x="984" y="164" width="12" height="12" rx="6" fill="none" stroke="#f472b6" stroke-width="2" style="animation-delay:-0.75s"/>
+      <line x1="990" y1="176" x2="990" y2="214" stroke="#1e2b45"/>
+      <circle cx="990" cy="170" r="6" fill="#0b0d16" stroke="#f472b6" stroke-width="2"/>
+      <rect x="900" y="214" width="180" height="64" rx="9" fill="#0f1424" stroke="#f472b6" stroke-width="1.2"/>
+      <text x="910" y="240" font-size="16">📈</text>
+      <text x="932" y="240" font-size="13" fill="#e2e8f0">ths-cli</text>
+      <text x="910" y="262" font-size="11" fill="#f472b6" letter-spacing="1">2026-08-14</text>
+      <text class="cn" x="1070" y="262" text-anchor="end" font-size="12" fill="#5b6478">量化</text>
+    </g>
+  </g>
+
+  <!-- footer -->
+  <circle class="pl" cx="36" cy="305" r="3.4" fill="#4ade80"/>
+  <text class="fps" x="48" y="309" font-size="12" fill="#4ade80" letter-spacing="1">CHRONOLOGY VERIFIED VIA GITHUB API</text>
+  <text class="fps" x="1066" y="309" text-anchor="end" font-size="12" fill="#5b6478">one person · one bridge · nine nodes</text>
+</svg>

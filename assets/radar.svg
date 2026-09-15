@@ -93,7 +93,7 @@
 
   <!-- radar bottom status -->
   <g class="fps" font-size="16">
-    <text x="72" y="458" fill="#8b95ad">SIGNAL <tspan fill="#e2e8f0" font-weight="800">151&#9733;</tspan></text>
+    <text x="72" y="458" fill="#8b95ad">SIGNAL <tspan fill="#e2e8f0" font-weight="800">168&#9733;</tspan></text>
     <text x="190" y="458" fill="#8b95ad">LINK <tspan fill="#4ade80">UP</tspan></text>
     <text x="288" y="458" fill="#8b95ad">NODES <tspan class="blink2" fill="#22d3ee">5/5</tspan></text>
     <text x="398" y="458" fill="#8b95ad">SCAN <tspan class="blink2" fill="#f472b6">&#9608;</tspan></text>

@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SIGNAL-151%E2%98%85-f472b6?style=flat&labelColor=0d1117" alt="151 stars"/>
-  <img src="https://img.shields.io/badge/FORKS-28-22d3ee?style=flat&labelColor=0d1117" alt="28 forks"/>
+  <img src="https://img.shields.io/badge/SIGNAL-168%E2%98%85-f472b6?style=flat&labelColor=0d1117" alt="168 stars"/>
+  <img src="https://img.shields.io/badge/FORKS-29-22d3ee?style=flat&labelColor=0d1117" alt="29 forks"/>
   <img src="https://img.shields.io/badge/NODES-9%20repos-a78bfa?style=flat&labelColor=0d1117" alt="9 repos"/>
-  <img src="https://img.shields.io/badge/FOLLOWERS-9-4ade80?style=flat&labelColor=0d1117" alt="9 followers"/>
+  <img src="https://img.shields.io/badge/FOLLOWERS-10-4ade80?style=flat&labelColor=0d1117" alt="10 followers"/>
   <img src="https://komarev.com/ghpvc/?username=Yht20927&color=22d3ee&style=flat&label=VIEWS" alt="views"/>
 </p>
 
@@ -14,6 +14,22 @@
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/boot.svg" width="100%" alt="boot sequence"/>
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+</p>
+
+## 💻 LIVE SESSION · 实时会话
+
+不是演示视频，是日常：一条命令挂到真实 Chrome 上，剩下的交给 Bridge 与 LLM。
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/terminal.svg" width="100%" alt="live bridge session terminal"/>
+</p>
+
+<p align="center">
+  <sub><code>attach → crawl → llm reply → video make</code> ：从接管浏览器到产出成片，全链路一条命令。</sub>
 </p>
 
 <p align="center">
@@ -41,7 +57,27 @@
   <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/arch.svg" width="100%" alt="bridge flow diagram"/>
 </p>
 
-社媒自动化之外，我还在做 **AI 视频管线**（一句话想法 → 口播稿 → TTS 配音 → whisper 对齐 → 富视觉渲染）和 **Agent 记忆基础设施**——目标是让 AI 既能操作真实世界，也能生产高质量内容、长期记忆。
+**为什么是「真实浏览器」而不是「模拟请求」：**
+
+| 维度 | 模拟请求 / 协议逆向 | Bridge Framework |
+|---|---|---|
+| 运行位置 | 无头进程直接发包 | 真实 Chrome 标签页内 |
+| 环境指纹 | 需自行伪造，平台一改就失效 | 与真实用户同一环境，天然一致 |
+| 页面改版 | 签名算法一变即全线崩溃 | DOM 层适配，抗改版 |
+| 人机验证 | 依赖额外打码通道 | 在浏览器内自然完成 |
+| 决策能力 | 流程硬编码 | LLM 实时决策 + 拟人化节奏 |
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+</p>
+
+## 🧭 MISSION LOG · 部署时间线
+
+从记忆基础设施到跨平台自动化，节点一个个亮起来：
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/chrono.svg" width="100%" alt="project chronology"/>
+</p>
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
@@ -64,6 +100,18 @@
   <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
+## 🎬 AI VIDEO PIPELINE · 从想法到成片
+
+社媒自动化之外，我还在做 **AI 视频管线**（一句话想法 → 口播稿 → TTS 配音 → whisper 对齐 → 富视觉渲染）和 **Agent 记忆基础设施**——目标是让 AI 既能操作真实世界，也能生产高质量内容、长期记忆。
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/pipeline.svg" width="100%" alt="ai video pipeline"/>
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+</p>
+
 ## 📡 LIVE TELEMETRY · 实时遥测
 
 <p align="center">
@@ -80,12 +128,16 @@
   <img src="https://streak-stats.demolab.com/?user=Yht20927&hide_border=true&background=0D1117&stroke=30363D&ring=F472B6&fire=22D3EE&currStreakNum=F472B6&currStreakLabel=22D3EE&sideNums=cbd5e1&sideLabels=64748b&dates=64748b" alt="GitHub Streak" height="150"/>
 </p>
 
+<details>
+<summary><b>🏆 TROPHIES — 成就墙</b>（点击展开）</summary>
+<br/>
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Yht20927&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=10" alt="Trophies" width="100%"/>
 </p>
+</details>
 
 <details>
-<summary><b>🐍 Snake — 食用贡献热力图</b>（点击展开）</summary>
+<summary><b>🐍 SNAKE — 食用贡献热力图</b>（点击展开）</summary>
 <br/>
 <p align="center">
   <picture>
@@ -105,17 +157,17 @@
 
 | 项目 | 描述 | ⭐ | 🍴 |
 |---|---|:-:|:-:|
-| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 抖音全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `56` | `13` |
-| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理：搜索、评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `28` | `4` |
-| [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具：搜索职位 / 智能匹配评分 / 批量打招呼 / LLM 招呼语，17 条命令 | `15` | `5` |
-| [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 基于 Bridge Framework 的同花顺工具，提供基本数据服务与简易量化 | `6` | — |
+| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 抖音全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `61` | `13` |
+| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理：搜索、评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `30` | `4` |
+| [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具：搜索职位 / 智能匹配评分 / 批量打招呼 / LLM 招呼语，17 条命令 | `18` | `6` |
+| [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 基于 Bridge Framework 的同花顺工具，提供基本数据服务与简易量化 | `7` | — |
 | [🎬 **tiktok-cli**](https://github.com/Yht20927/tiktok-cli) | 基于 Bridge Framework 的 TikTok 全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复 | `2` | — |
 
 ### 🎬 媒体与创作
 
 | 项目 | 描述 | ⭐ | 🍴 |
 |---|---|:-:|:-:|
-| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播全自动录制 + 多模态 AI 智能切片：录制、弹幕、ASR、信号融合、自动剪辑高光片段 | `33` | `5` |
+| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播全自动录制 + 多模态 AI 智能切片：录制、弹幕、ASR、信号融合、自动剪辑高光片段 | `38` | `5` |
 
 ### 🧠 AI Agent 基础设施
 
