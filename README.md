@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SIGNAL-168%E2%98%85-f472b6?style=flat&labelColor=0d1117" alt="168 stars"/>
-  <img src="https://img.shields.io/badge/FORKS-29-22d3ee?style=flat&labelColor=0d1117" alt="29 forks"/>
+  <img src="https://img.shields.io/badge/SIGNAL-182%E2%98%85-f472b6?style=flat&labelColor=0d1117" alt="182 stars"/>
+  <img src="https://img.shields.io/badge/FORKS-31-22d3ee?style=flat&labelColor=0d1117" alt="31 forks"/>
   <img src="https://img.shields.io/badge/NODES-9%20repos-a78bfa?style=flat&labelColor=0d1117" alt="9 repos"/>
   <img src="https://img.shields.io/badge/FOLLOWERS-10-4ade80?style=flat&labelColor=0d1117" alt="10 followers"/>
   <img src="https://komarev.com/ghpvc/?username=Yht20927&color=22d3ee&style=flat&label=VIEWS" alt="views"/>
@@ -157,17 +157,17 @@
 
 | 项目 | 描述 | ⭐ | 🍴 |
 |---|---|:-:|:-:|
-| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 抖音全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `61` | `13` |
-| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理：搜索、评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `30` | `4` |
-| [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具：搜索职位 / 智能匹配评分 / 批量打招呼 / LLM 招呼语，17 条命令 | `18` | `6` |
-| [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 基于 Bridge Framework 的同花顺工具，提供基本数据服务与简易量化 | `7` | — |
+| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 抖音全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `67` | `14` |
+| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理：搜索、评论爬取(含嵌套回复)、AI 智能回复、运营仪表盘 | `31` | `4` |
+| [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具：搜索职位 / 智能匹配评分 / 批量打招呼 / LLM 招呼语，17 条命令 | `20` | `6` |
+| [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 基于 Bridge Framework 的同花顺工具，提供基本数据服务与简易量化 | `9` | `1` |
 | [🎬 **tiktok-cli**](https://github.com/Yht20927/tiktok-cli) | 基于 Bridge Framework 的 TikTok 全自动评论管理：搜索、全量评论爬取(含嵌套回复)、AI 智能回复 | `2` | — |
 
 ### 🎬 媒体与创作
 
 | 项目 | 描述 | ⭐ | 🍴 |
 |---|---|:-:|:-:|
-| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播全自动录制 + 多模态 AI 智能切片：录制、弹幕、ASR、信号融合、自动剪辑高光片段 | `38` | `5` |
+| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播全自动录制 + 多模态 AI 智能切片：录制、弹幕、ASR、信号融合、自动剪辑高光片段 | `41` | `5` |
 
 ### 🧠 AI Agent 基础设施
 
@@ -184,7 +184,7 @@
 ## 🔭 NOW · 正在做
 
 - 🎬 **AI 视频管线** — 一句话想法 → 口播稿 → 整篇 TTS 配音 → whisper 对齐 → 富视觉渲染，产出「非网页风」成片
-- 🤖 **bridge-cli 迭代** — 打磨 17 条命令的智能招聘助手与更多 Bridge 节点
+- 🤖 **BossZhipin-cli 迭代** — 打磨 17 条命令的智能招聘助手与更多 Bridge 节点
 
 ## 📫 CONTACT
 
