@@ -40,8 +40,8 @@
 
   <!-- header -->
   <text class="fps" x="34" y="32" font-size="18" font-weight="700" letter-spacing="2" fill="#a78bfa">MISSION LOG</text>
-  <text class="fps" x="196" y="32" font-size="14" fill="#5b6478">2026.04 → 2026.08</text>
-  <text class="cn" x="1066" y="32" text-anchor="end" font-size="14" fill="#8b95ad">8 个节点 · 全部真实浏览器驱动</text>
+  <text class="fps" x="196" y="32" font-size="14" fill="#5b6478">2026.04 → 2026.10</text>
+  <text class="cn" x="1066" y="32" text-anchor="end" font-size="14" fill="#8b95ad">8 个项目节点 · 5 个平台在线</text>
   <line x1="34" y1="44" x2="1066" y2="44" stroke="#1e2b45"/>
 
   <!-- axis -->
@@ -150,5 +150,5 @@
   <!-- footer -->
   <circle class="pl" cx="36" cy="305" r="3.4" fill="#4ade80"/>
   <text class="fps" x="48" y="309" font-size="12" fill="#4ade80" letter-spacing="1">CHRONOLOGY VERIFIED VIA GITHUB API</text>
-  <text class="fps" x="1066" y="309" text-anchor="end" font-size="12" fill="#5b6478">one person · one bridge · nine nodes</text>
+  <text class="fps" x="1066" y="309" text-anchor="end" font-size="12" fill="#5b6478">one person · one bridge · ten repos</text>
 </svg>
