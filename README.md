@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/banner.svg" width="100%" alt="YHT20927 / BRIDGE FRAMEWORK banner"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/banner.svg" width="100%" alt="YHT20927 / BRIDGE FRAMEWORK banner"/>
 </p>
 
 <p align="center">
@@ -16,11 +16,11 @@
 > 目前 **10 个仓库**、**5 个平台节点**、**5 个独立 Bridge 端口** 可并行在线：抖音 / 小红书 / BOSS直聘 / TikTok / 同花顺，外加直播切片、AI 视频管线、Agent 记忆与源码安全研究。
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/boot.svg" width="100%" alt="boot sequence"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/boot.svg" width="100%" alt="boot sequence"/>
 </p>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
 ## 📡 PATCH NOTES · 最近信号
@@ -35,7 +35,7 @@
 | `2026-08-03` | **BossZhipin-cli** | 17 条命令稳定版：匹配评分、`@ref` 缓存、48s 写节流 |
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
 ## 💻 LIVE SESSION · 实时会话
@@ -43,7 +43,7 @@
 不是演示视频，是日常：一条命令挂到真实 Chrome 上，剩下的交给 Bridge 与 LLM。
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/terminal.svg" width="100%" alt="live bridge session terminal"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/terminal.svg" width="100%" alt="live bridge session terminal"/>
 </p>
 
 <p align="center">
@@ -51,7 +51,7 @@
 </p>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
 ## 🛰 NODE SCAN · 平台在线矩阵
@@ -67,7 +67,7 @@
 | 🎬 **tiktok-cli** | TikTok | 搜索 / 评论 / 嵌套回复 / 写接口实测 / 长串缓存 | `2★` |
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/radar.svg" width="100%" alt="platform radar & matrix"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/radar.svg" width="100%" alt="platform radar & matrix"/>
 </p>
 
 ## ⚙ ARCHITECTURE · 数据流
@@ -80,7 +80,7 @@
 ```
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/arch.svg" width="100%" alt="bridge flow diagram"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/arch.svg" width="100%" alt="bridge flow diagram"/>
 </p>
 
 **为什么是「真实浏览器」而不是「模拟请求」：**
@@ -114,7 +114,7 @@ node cli.js search "AI" --count 5
 ```
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
 ## 🧭 MISSION LOG · 部署时间线
@@ -122,7 +122,7 @@ node cli.js search "AI" --count 5
 从记忆基础设施到跨平台自动化，节点一个个亮起来：
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/chrono.svg" width="100%" alt="project chronology"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/chrono.svg" width="100%" alt="project chronology"/>
 </p>
 
 ```text
@@ -134,13 +134,13 @@ node cli.js search "AI" --count 5
 ```
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
 ## 🧬 LOADOUT · 武器库
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/skills.svg" width="100%" alt="tech proficiency bars"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/skills.svg" width="100%" alt="tech proficiency bars"/>
 </p>
 
 **真实浏览器自动化** · 油猴脚本 + Bridge Server，反检测 / 风控环境稳定运行
@@ -153,7 +153,7 @@ node cli.js search "AI" --count 5
 **工程化** · Node.js / Python / Bash / SQLite / ffmpeg / faster-whisper / Playwright
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
 ## 🎬 AI VIDEO PIPELINE · 从想法到成片
@@ -170,11 +170,11 @@ node cli.js search "AI" --count 5
 | 6. 成片 | 全部素材 | `4k.mp4` |
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/pipeline.svg" width="100%" alt="ai video pipeline"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/pipeline.svg" width="100%" alt="ai video pipeline"/>
 </p>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
 ## 📡 LIVE TELEMETRY · 实时遥测
@@ -213,7 +213,7 @@ node cli.js search "AI" --count 5
 </details>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/divider.svg" width="100%" alt="—"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/divider.svg" width="100%" alt="—"/>
 </p>
 
 ## 🗂 REPO MODULES · 仓库一览
@@ -266,5 +266,5 @@ node cli.js search "AI" --count 5
 - GitHub: [@Yht20927](https://github.com/Yht20927) — 欢迎 star、issue 和 PR，一起让浏览器自动化更可靠 🌱
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Yht20927/Yht20927@main/assets/footer.svg" width="100%" alt="footer — real browsers, not simulation"/>
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/footer.svg" width="100%" alt="footer — real browsers, not simulation"/>
 </p>

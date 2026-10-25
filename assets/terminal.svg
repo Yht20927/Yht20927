@@ -23,7 +23,7 @@
     <clipPath id="t1" clipPathUnits="userSpaceOnUse"><rect x="30" y="85" width="0" height="27">
       <animate attributeName="width" values="0;410;410" keyTimes="0;0.06;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
     <clipPath id="t2" clipPathUnits="userSpaceOnUse"><rect x="30" y="117" width="0" height="27">
-      <animate attributeName="width" values="0;0;525;525" keyTimes="0;0.06;0.13;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+      <animate attributeName="width" values="0;0;545;545" keyTimes="0;0.06;0.13;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
     <clipPath id="t3" clipPathUnits="userSpaceOnUse"><rect x="30" y="149" width="0" height="27">
       <animate attributeName="width" values="0;0;365;365" keyTimes="0;0.13;0.20;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
     <clipPath id="t4" clipPathUnits="userSpaceOnUse"><rect x="30" y="181" width="0" height="27">
@@ -82,13 +82,13 @@
           <text x="32" y="104"><tspan fill="#22d3ee">$ </tspan><tspan fill="#e2e8f0">bridge attach --node douyin --userscript</tspan></text>
         </g>
         <g clip-path="url(#t2)">
-          <text x="32" y="136"><tspan fill="#4ade80">[ok] </tspan><tspan fill="#8b95ad">chrome 131 · wss://127.0.0.1:7788 · session alive</tspan></text>
+          <text x="32" y="136"><tspan fill="#4ade80">[ok] </tspan><tspan fill="#8b95ad">chrome 142 · wss://127.0.0.1:19422 · session alive</tspan></text>
         </g>
         <g clip-path="url(#t3)">
           <text x="32" y="168"><tspan fill="#22d3ee">$ </tspan><tspan fill="#e2e8f0">bridge crawl --depth full --nested</tspan></text>
         </g>
         <g clip-path="url(#t4)">
-          <text x="32" y="200"><tspan fill="#4ade80">[ok] </tspan><tspan fill="#a78bfa">1,284</tspan><tspan fill="#8b95ad"> comments · </tspan><tspan fill="#a78bfa">37</tspan><tspan fill="#8b95ad"> nested threads · 0 captcha</tspan></text>
+          <text x="32" y="200"><tspan fill="#4ade80">[ok] </tspan><tspan fill="#a78bfa">2,048</tspan><tspan fill="#8b95ad"> comments · </tspan><tspan fill="#a78bfa">63</tspan><tspan fill="#8b95ad"> nested threads · 0 captcha</tspan></text>
         </g>
         <g clip-path="url(#t5)">
           <text x="32" y="232"><tspan fill="#22d3ee">$ </tspan><tspan fill="#e2e8f0">llm reply --persona human --risk-guard</tspan></text>
