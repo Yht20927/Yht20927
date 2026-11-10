@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d16"/><stop offset="0.5" stop-color="#0d1020"/><stop offset="1" stop-color="#0b0d16"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#151c30" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="barPink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.18"/><stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="barCyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.15"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="barViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.15"/><stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="barGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.15"/><stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="barAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.15"/><stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="barBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa" stop-opacity="0.15"/><stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glowS" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .fps{font-family:"Fira Code","Cascadia Code",Menlo,Consolas,monospace}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.35}}
+    .blink{animation:blink 1.2s steps(1) infinite}
+    .pl{animation:pulse 2.2s ease-in-out infinite}
+  </style>
+
+  <rect width="1100" height="470" fill="url(#bg)"/>
+  <rect width="1100" height="470" fill="url(#grid)" opacity="0.45"/>
+
+  <!-- corner brackets -->
+  <g stroke="#22d3ee" stroke-width="2.6" fill="none" opacity="0.45">
+    <path d="M20 48 V20 H48"/>
+    <path d="M1080 48 V20 H1052"/>
+    <path d="M20 428 V456 H48"/>
+    <path d="M1080 428 V456 H1052"/>
+  </g>
+
+  <!-- header -->
+  <text class="fps" x="34" y="32" font-size="18" font-weight="700" letter-spacing="2" fill="#f472b6">SIGNAL RANKING</text>
+  <circle class="pl" cx="226" cy="26.5" r="4" fill="#4ade80"/>
+  <text class="fps" x="238" y="31" font-size="13" fill="#4ade80" letter-spacing="1">GITHUB API · LIVE</text>
+  <text class="fps" x="1066" y="31" text-anchor="end" font-size="13" fill="#8b95ad">TOTAL <tspan fill="#f472b6" font-weight="700" font-size="15">398&#9733;</tspan>  &#183;  <tspan fill="#22d3ee">68 FORKS</tspan>  &#183;  <tspan fill="#a78bfa">10 REPOS</tspan></text>
+  <line x1="34" y1="44" x2="1066" y2="44" stroke="#1e2b45"/>
+
+  <!-- moving scan line -->
+  <rect x="300" y="58" width="2" height="370" fill="#22d3ee" opacity="0.18">
+    <animate attributeName="x" values="300;890;300" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- rows -->
+  <g class="fps">
+    <!-- #1 douyin-cli · 248★ -->
+    <text x="38" y="85" font-size="13" fill="#fbbf24" font-weight="700">#01</text>
+    <text x="82" y="85" font-size="15" fill="#e2e8f0">douyin-cli</text>
+    <rect x="300" y="73" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="73" width="0" height="14" rx="7" fill="url(#barPink)" filter="url(#glowS)"><animate attributeName="width" from="0" to="590" dur="1.2s" fill="freeze"/></rect>
+    <text x="962" y="84" text-anchor="end" font-size="11" fill="#5b6478">48 forks</text>
+    <text x="1064" y="85" text-anchor="end" font-size="15" fill="#f472b6" font-weight="700">248&#9733;</text>
+
+    <!-- #2 douyin-living · 55★ -->
+    <text x="38" y="127" font-size="13" fill="#cbd5e1" font-weight="700">#02</text>
+    <text x="82" y="127" font-size="15" fill="#e2e8f0">douyin-living</text>
+    <rect x="300" y="115" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="115" width="0" height="14" rx="7" fill="url(#barCyan)"><animate attributeName="width" from="0" to="131" dur="1.2s" begin="0.08s" fill="freeze"/></rect>
+    <text x="962" y="126" text-anchor="end" font-size="11" fill="#5b6478">6 forks</text>
+    <text x="1064" y="127" text-anchor="end" font-size="15" fill="#22d3ee" font-weight="700">55&#9733;</text>
+
+    <!-- #3 xiaohongshu-cli · 41★ -->
+    <text x="38" y="169" font-size="13" fill="#fb923c" font-weight="700">#03</text>
+    <text x="82" y="169" font-size="15" fill="#e2e8f0">xiaohongshu-cli</text>
+    <rect x="300" y="157" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="157" width="0" height="14" rx="7" fill="url(#barViolet)"><animate attributeName="width" from="0" to="98" dur="1.2s" begin="0.16s" fill="freeze"/></rect>
+    <text x="962" y="168" text-anchor="end" font-size="11" fill="#5b6478">4 forks</text>
+    <text x="1064" y="169" text-anchor="end" font-size="15" fill="#a78bfa" font-weight="700">41&#9733;</text>
+
+    <!-- #4 BossZhipin-cli · 24★ -->
+    <text x="38" y="211" font-size="13" fill="#475069" font-weight="700">#04</text>
+    <text x="82" y="211" font-size="15" fill="#e2e8f0">BossZhipin-cli</text>
+    <rect x="300" y="199" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="199" width="0" height="14" rx="7" fill="url(#barGreen)"><animate attributeName="width" from="0" to="57" dur="1.2s" begin="0.24s" fill="freeze"/></rect>
+    <text x="962" y="210" text-anchor="end" font-size="11" fill="#5b6478">8 forks</text>
+    <text x="1064" y="211" text-anchor="end" font-size="15" fill="#4ade80" font-weight="700">24&#9733;</text>
+
+    <!-- #5 ths-cli · 13★ -->
+    <text x="38" y="253" font-size="13" fill="#475069" font-weight="700">#05</text>
+    <text x="82" y="253" font-size="15" fill="#e2e8f0">ths-cli</text>
+    <rect x="300" y="241" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="241" width="0" height="14" rx="7" fill="url(#barCyan)"><animate attributeName="width" from="0" to="31" dur="1.2s" begin="0.32s" fill="freeze"/></rect>
+    <text x="962" y="252" text-anchor="end" font-size="11" fill="#5b6478">1 fork</text>
+    <text x="1064" y="253" text-anchor="end" font-size="15" fill="#22d3ee" font-weight="700">13&#9733;</text>
+
+    <!-- #6 Yht20927 · 6★ -->
+    <text x="38" y="295" font-size="13" fill="#475069" font-weight="700">#06</text>
+    <text x="82" y="295" font-size="15" fill="#e2e8f0">Yht20927 <tspan fill="#5b6478" font-size="11">· profile</tspan></text>
+    <rect x="300" y="283" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="283" width="0" height="14" rx="7" fill="url(#barBlue)"><animate attributeName="width" from="0" to="14" dur="1.2s" begin="0.40s" fill="freeze"/></rect>
+    <text x="962" y="294" text-anchor="end" font-size="11" fill="#5b6478">—</text>
+    <text x="1064" y="295" text-anchor="end" font-size="15" fill="#60a5fa" font-weight="700">6&#9733;</text>
+
+    <!-- #7 my-claude-memory · 5★ -->
+    <text x="38" y="337" font-size="13" fill="#475069" font-weight="700">#07</text>
+    <text x="82" y="337" font-size="15" fill="#e2e8f0">my-claude-memory</text>
+    <rect x="300" y="325" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="325" width="0" height="14" rx="7" fill="url(#barViolet)"><animate attributeName="width" from="0" to="12" dur="1.2s" begin="0.48s" fill="freeze"/></rect>
+    <text x="962" y="336" text-anchor="end" font-size="11" fill="#5b6478">1 fork</text>
+    <text x="1064" y="337" text-anchor="end" font-size="15" fill="#a78bfa" font-weight="700">5&#9733;</text>
+
+    <!-- #8 tiktok-cli · 3★ -->
+    <text x="38" y="379" font-size="13" fill="#475069" font-weight="700">#08</text>
+    <text x="82" y="379" font-size="15" fill="#e2e8f0">tiktok-cli</text>
+    <rect x="300" y="367" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="367" width="0" height="14" rx="7" fill="url(#barAmber)"><animate attributeName="width" from="0" to="7" dur="1.2s" begin="0.56s" fill="freeze"/></rect>
+    <text x="962" y="378" text-anchor="end" font-size="11" fill="#5b6478">—</text>
+    <text x="1064" y="379" text-anchor="end" font-size="15" fill="#fbbf24" font-weight="700">3&#9733;</text>
+
+    <!-- #9 markdown-to · 3★ -->
+    <text x="38" y="421" font-size="13" fill="#475069" font-weight="700">#09</text>
+    <text x="82" y="421" font-size="15" fill="#e2e8f0">markdown-to</text>
+    <rect x="300" y="409" width="590" height="14" rx="7" fill="#141a2e" stroke="#1e2b45"/>
+    <rect x="300" y="409" width="0" height="14" rx="7" fill="url(#barGreen)"><animate attributeName="width" from="0" to="7" dur="1.2s" begin="0.64s" fill="freeze"/></rect>
+    <text x="962" y="420" text-anchor="end" font-size="11" fill="#5b6478">—</text>
+    <text x="1064" y="421" text-anchor="end" font-size="15" fill="#4ade80" font-weight="700">3&#9733;</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="34" y1="440" x2="1066" y2="440" stroke="#1e2b45"/>
+  <circle class="pl" cx="40" cy="457" r="3" fill="#4ade80"/>
+  <text class="fps" x="52" y="461" font-size="11" fill="#4ade80" letter-spacing="1">SYNCED VIA GITHUB API · 2026-11-10 · TOP 9 PUBLIC REPOS</text>
+  <text class="fps" x="1066" y="461" text-anchor="end" font-size="11" fill="#5b6478" letter-spacing="1">REAL BROWSERS, NOT SIMULATION</text>
+</svg>

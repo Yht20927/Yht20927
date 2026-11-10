@@ -37,5 +37,5 @@
   <line x1="180" y1="82" x2="920" y2="82" stroke="url(#bar)" stroke-width="2"/>
   <circle class="comet" r="3.4" cy="82" cx="180" fill="#22d3ee"/>
 
-  <text class="fps" x="550" y="106" text-anchor="middle" font-size="14" fill="#5b6478" letter-spacing="2">bridge-framework&#183;userscript&#183;wss&#183;llm</text>
+  <text class="fps" x="550" y="106" text-anchor="middle" font-size="14" fill="#5b6478" letter-spacing="2">bridge-framework&#183;userscript&#183;wss&#183;llm <tspan fill="#f472b6">&#183;</tspan> <tspan fill="#f472b6" font-weight="700">398&#9733;</tspan> <tspan fill="#5b6478">&#183;</tspan> <tspan fill="#22d3ee">68 forks</tspan></text>
 </svg>

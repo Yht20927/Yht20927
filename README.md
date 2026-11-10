@@ -3,17 +3,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SIGNAL-213%E2%98%85-f472b6?style=flat&labelColor=0d1117" alt="213 stars"/>
-  <img src="https://img.shields.io/badge/FORKS-37-22d3ee?style=flat&labelColor=0d1117" alt="37 forks"/>
+  <img src="https://img.shields.io/badge/SIGNAL-398%E2%98%85-f472b6?style=flat&labelColor=0d1117" alt="398 stars"/>
+  <img src="https://img.shields.io/badge/FORKS-68-22d3ee?style=flat&labelColor=0d1117" alt="68 forks"/>
   <img src="https://img.shields.io/badge/NODES-10%20repos-a78bfa?style=flat&labelColor=0d1117" alt="10 repos"/>
-  <img src="https://img.shields.io/badge/FOLLOWERS-12-4ade80?style=flat&labelColor=0d1117" alt="12 followers"/>
-  <img src="https://img.shields.io/badge/COMMITS-206%2B-9ca3c0?style=flat&labelColor=0d1117" alt="206 commits"/>
+  <img src="https://img.shields.io/badge/FOLLOWERS-13-4ade80?style=flat&labelColor=0d1117" alt="13 followers"/>
+  <img src="https://img.shields.io/badge/COMMITS-239%2B-9ca3c0?style=flat&labelColor=0d1117" alt="239 commits"/>
   <img src="https://komarev.com/ghpvc/?username=Yht20927&color=22d3ee&style=flat&label=VIEWS" alt="views"/>
 </p>
 
 > **一个人就是一整套「Bridge Framework」神经中枢。** 别人拿「模拟请求」对抗平台，我用 **油猴脚本 + Bridge Server 驱动真实浏览器**，在风控 / 反爬环境里稳定操作；再交给 **LLM** 做决策与拟人化——让每个工具「会思考」，而不是「照着跑」。
 >
-> 目前 **10 个仓库**、**5 个平台节点**、**5 个独立 Bridge 端口** 可并行在线：抖音 / 小红书 / BOSS直聘 / TikTok / 同花顺，外加直播切片、AI 视频管线、Agent 记忆与源码安全研究。
+> 目前 **10 个仓库 · 398★ · 68 forks**、**5 个平台节点**、**5 个独立 Bridge 端口** 可并行在线：抖音 / 小红书 / BOSS直聘 / TikTok / 同花顺，外加直播切片、AI 视频管线、Agent 记忆与源码安全研究。
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/boot.svg" width="100%" alt="boot sequence"/>
@@ -25,10 +25,12 @@
 
 ## 📡 PATCH NOTES · 最近信号
 
-不是冻结的简历，是仍在持续推送的代码。以下为最近四个节点的真实 commit：
+不是冻结的简历，是仍在持续推送的代码。以下为最近六个节点的真实 commit：
 
 | 时间 | 节点 | 最新变更 |
 |---|---|---|
+| `2026-11-08` | **douyin-living** | Cookie 容错 + ASR CPU 回退 + SRT 失败统计 |
+| `2026-10-28` | **markdown-to** | 支持 Markdown 硬换行 |
 | `2026-10-19` | **ths-cli** | 科创板指数 + 资金流排行解析 + 成交额均值修正 |
 | `2026-10-10` | **douyin-cli** | 多账号收尾：账号无关命令忽略 `--account`，新增 `videos` 命令 |
 | `2026-08-19` | **tiktok-cli** | v0.3 实战修复：登录检测假阴性、评论缓存陈旧、写超时 |
@@ -60,11 +62,11 @@
 
 | 节点 | 平台 | 当前能力 | 信号 |
 |---|---|---|---|
-| 🎵 **douyin-cli** | 抖音 | 搜索 / 全量评论 / 嵌套回复 / **图片评论** / **多账号** / ReplyEngine | `76★ · 17 forks` |
-| 📕 **xiaohongshu-cli** | 小红书 | 笔记搜索 / 评论 / 嵌套回复 / 7 人格 AI 回复 / 行为模拟 | `36★ · 4 forks` |
-| 💼 **BossZhipin-cli** | BOSS直聘 | 职位搜索 / 匹配评分 / 批量打招呼 / LLM 招呼语 / 17 命令 | `22★ · 8 forks` |
+| 🎵 **douyin-cli** | 抖音 | 搜索 / 全量评论 / 嵌套回复 / **图片评论** / **多账号** / ReplyEngine | `248★ · 48 forks` |
+| 📕 **xiaohongshu-cli** | 小红书 | 笔记搜索 / 评论 / 嵌套回复 / 7 人格 AI 回复 / 行为模拟 | `41★ · 4 forks` |
+| 💼 **BossZhipin-cli** | BOSS直聘 | 职位搜索 / 匹配评分 / 批量打招呼 / LLM 招呼语 / 17 命令 | `24★ · 8 forks` |
 | 📈 **ths-cli** | 同花顺 | 行情 / K线 / 14 项指标 / 选股 / 回测 / 盘中风控 / 组合画像 | `13★ · 1 fork` |
-| 🎬 **tiktok-cli** | TikTok | 搜索 / 评论 / 嵌套回复 / 写接口实测 / 长串缓存 | `2★` |
+| 🎬 **tiktok-cli** | TikTok | 搜索 / 评论 / 嵌套回复 / 写接口实测 / 长串缓存 | `3★` |
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/radar.svg" width="100%" alt="platform radar & matrix"/>
@@ -180,6 +182,14 @@ node cli.js search "AI" --count 5
 ## 📡 LIVE TELEMETRY · 实时遥测
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/Yht20927/Yht20927/main/assets/stars.svg" width="100%" alt="signal ranking — 398 stars / 68 forks across public repos"/>
+</p>
+
+<p align="center">
+  <sub><b>398★</b> · <b>68 forks</b> · <b>10 repos</b> · <b>239 commits</b> — 星标矩阵同步自 GitHub API（2026-11-10）。</sub>
+</p>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Yht20927&show_icons=true&count_private=true&hide_border=true&rank_icon=github&title_color=f472b6&icon_color=22d3ee&text_color=cbd5e1&bg_color=0d1117&border_radius=14" alt="GitHub Stats" height="170"/>
   &nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yht20927&layout=compact&hide_border=true&langs_count=6&title_color=22d3ee&text_color=cbd5e1&bg_color=0d1117&border_radius=14" alt="Top Languages" height="170"/>
@@ -222,17 +232,17 @@ node cli.js search "AI" --count 5
 
 | 项目 | 描述 | 核心能力 | ⭐ | 🍴 |
 |---|---|---|:-:|:-:|
-| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 抖音全自动评论管理 | ReplyEngine · 图片评论 · 多账号 · SQLite schema v8 · 运营仪表盘 | `76` | `17` |
-| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理 | 7 人格轮换 · 行为模拟 · 45-180s 随机 · 风控断路器 | `36` | `4` |
-| [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具 | 17 条命令 · 匹配评分 · 批量打招呼 · `@ref` 缓存 · 48s 写节流 | `22` | `8` |
+| [🎵 **douyin-cli**](https://github.com/Yht20927/douyin-cli) | 抖音全自动评论管理 | ReplyEngine · 图片评论 · 多账号 · SQLite schema v8 · 运营仪表盘 | `248` | `48` |
+| [📕 **xiaohongshu-cli**](https://github.com/Yht20927/xiaohongshu-cli) | 小红书全自动管理 | 7 人格轮换 · 行为模拟 · 45-180s 随机 · 风控断路器 | `41` | `4` |
+| [💼 **BossZhipin-cli**](https://github.com/Yht20927/BossZhipin-cli) | BOSS直聘命令行工具 | 17 条命令 · 匹配评分 · 批量打招呼 · `@ref` 缓存 · 48s 写节流 | `24` | `8` |
 | [📈 **ths-cli**](https://github.com/Yht20927/ths-cli) | 同花顺行情 / 量化 CLI | 20+ 命令 · 14 项指标 · 6 策略回测 · 盘中 `watch` · 组合风控 | `13` | `1` |
-| [🎬 **tiktok-cli**](https://github.com/Yht20927/tiktok-cli) | TikTok 全自动评论管理 | 读 / 写接口实测 · SecSDK 头 · 长串关联缓存 · v0.3 | `2` | — |
+| [🎬 **tiktok-cli**](https://github.com/Yht20927/tiktok-cli) | TikTok 全自动评论管理 | 读 / 写接口实测 · SecSDK 头 · 长串关联缓存 · v0.3 | `3` | — |
 
 ### 🎬 媒体与创作
 
 | 项目 | 描述 | 核心能力 | ⭐ | 🍴 |
 |---|---|---|:-:|:-:|
-| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播录制 + 多模态 AI 切片 | 4K FLV 录制 · 弹幕 WebSocket · faster-whisper / WhisperX · 3 层 AI + 7 项数学融合 · ffmpeg 无损剪辑 | `49` | `6` |
+| [🎥 **douyin-living**](https://github.com/Yht20927/douyin-living) | 抖音直播录制 + 多模态 AI 切片 | 4K FLV 录制 · 弹幕 WebSocket · faster-whisper / WhisperX · 3 层 AI + 7 项数学融合 · ffmpeg 无损剪辑 | `55` | `6` |
 
 ### 🧠 AI Agent 基础设施
 
@@ -256,6 +266,7 @@ node cli.js search "AI" --count 5
 
 ## 🔭 NOW · 正在做
 
+- 🎥 **douyin-living 稳定性** — Cookie 容错、ASR CPU 回退、SRT 失败统计，让直播切片管线在异常输入下也能跑完
 - 📈 **ths-cli 持续迭代** — 科创板指数、资金流排行、盘中 `watch` 边沿告警，把「破止损必走」提前到破位瞬间
 - 🎵 **douyin-cli 多账号** — `accounts` / `--account` / `videos` 收尾，多号并行驱动与独立记忆
 - 🎬 **AI 视频管线** — 一句话想法 → 口播稿 → 整篇 TTS 配音 → whisper 对齐 → 富视觉渲染，产出「非网页风」成片

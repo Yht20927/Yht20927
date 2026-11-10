@@ -3,15 +3,33 @@
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b0d16"/><stop offset="0.5" stop-color="#0d1020"/><stop offset="1" stop-color="#0b0d16"/>
     </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#151c30" stroke-width="1"/>
+    </pattern>
     <radialGradient id="sweep" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.28"/>
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.32"/>
       <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="radarBg" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#0f2a36" stop-opacity="0.55"/>
+      <stop offset="0" stop-color="#0f2a36" stop-opacity="0.6"/>
       <stop offset="0.7" stop-color="#07141c" stop-opacity="0.4"/>
       <stop offset="1" stop-color="#061018" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="barPink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.25"/><stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="barCyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.2"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="barViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.2"/><stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="barGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.2"/><stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="barAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.2"/><stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
     <filter id="blurS" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
   </defs>
 
@@ -28,6 +46,7 @@
   </style>
 
   <rect width="1100" height="470" fill="url(#bg)"/>
+  <rect width="1100" height="470" fill="url(#grid)" opacity="0.5"/>
 
   <!-- corner brackets -->
   <g stroke="#a78bfa" stroke-width="3" fill="none" opacity="0.7">
@@ -55,6 +74,11 @@
       <line x1="-126" y1="126" x2="126" y2="-126"/>
     </g>
 
+    <!-- rotating tick ring -->
+    <circle r="184" fill="none" stroke="#22d3ee" stroke-opacity="0.28" stroke-width="6" stroke-dasharray="2 12">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
+    </circle>
+
     <!-- rotating sweep -->
     <g>
       <path d="M0 0 L0 -178 A178 178 0 0 1 36 -174 Z" fill="url(#sweep)" filter="url(#blurS)"/>
@@ -67,63 +91,72 @@
     <g>
       <circle cx="58" cy="-118" r="3.4" fill="#f472b6"/>
       <circle cx="58" cy="-118" fill="none" stroke="#f472b6" stroke-width="1.6"><animate attributeName="r" from="4" to="30" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.9" to="0" dur="2s" repeatCount="indefinite"/></circle>
-      <text x="78" y="-114" class="fps" font-size="12" fill="#f0abfc">douyin</text>
+      <text x="78" y="-114" class="fps" font-size="12" fill="#f0abfc">douyin <tspan fill="#f472b6" font-weight="700">248&#9733;</tspan></text>
     </g>
     <g>
       <circle cx="-98" cy="-66" r="3.4" fill="#a78bfa"/>
       <circle cx="-98" cy="-66" fill="none" stroke="#a78bfa" stroke-width="1.6"><animate attributeName="r" from="4" to="26" dur="2.4s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.9" to="0" dur="2.4s" begin="0.4s" repeatCount="indefinite"/></circle>
-      <text x="-124" y="-70" class="fps" font-size="12" fill="#c4b5fd">xhs</text>
+      <text x="-124" y="-70" class="fps" font-size="12" fill="#c4b5fd">xhs <tspan fill="#a78bfa" font-weight="700">41&#9733;</tspan></text>
     </g>
     <g>
       <circle cx="-40" cy="118" r="3.4" fill="#22d3ee"/>
       <circle cx="-40" cy="118" fill="none" stroke="#22d3ee" stroke-width="1.6"><animate attributeName="r" from="4" to="26" dur="2.2s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.9" to="0" dur="2.2s" begin="0.8s" repeatCount="indefinite"/></circle>
-      <text x="-64" y="136" class="fps" font-size="12" fill="#67e8f9">boss</text>
+      <text x="-64" y="136" class="fps" font-size="12" fill="#67e8f9">boss <tspan fill="#22d3ee" font-weight="700">24&#9733;</tspan></text>
     </g>
     <g>
       <circle cx="118" cy="40" r="3.2" fill="#4ade80"/>
       <circle cx="118" cy="40" fill="none" stroke="#4ade80" stroke-width="1.6"><animate attributeName="r" from="4" to="22" dur="2.6s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.9" to="0" dur="2.6s" begin="1.2s" repeatCount="indefinite"/></circle>
-      <text x="136" y="46" class="fps" font-size="12" fill="#86efac">ths</text>
+      <text x="136" y="46" class="fps" font-size="12" fill="#86efac">ths <tspan fill="#4ade80" font-weight="700">13&#9733;</tspan></text>
     </g>
     <g>
       <circle cx="-120" cy="-6" r="3" fill="#fbbf24"/>
       <circle cx="-120" cy="-6" fill="none" stroke="#fbbf24" stroke-width="1.6"><animate attributeName="r" from="3" to="20" dur="2.8s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.9" to="0" dur="2.8s" begin="1.6s" repeatCount="indefinite"/></circle>
-      <text x="-138" y="6" class="fps" font-size="12" fill="#fde68a">tiktok</text>
+      <text x="-138" y="6" class="fps" font-size="12" fill="#fde68a">tiktok <tspan fill="#fbbf24" font-weight="700">3&#9733;</tspan></text>
     </g>
   </g>
 
   <!-- radar bottom status -->
   <g class="fps" font-size="16">
-    <text x="72" y="458" fill="#8b95ad">SIGNAL <tspan fill="#e2e8f0" font-weight="800">213&#9733;</tspan></text>
+    <text x="72" y="458" fill="#8b95ad">SIGNAL <tspan fill="#e2e8f0" font-weight="800">398&#9733;</tspan></text>
     <text x="190" y="458" fill="#8b95ad">LINK <tspan fill="#4ade80">UP</tspan></text>
     <text x="288" y="458" fill="#8b95ad">NODES <tspan class="blink2" fill="#22d3ee">5/5</tspan></text>
     <text x="398" y="458" fill="#8b95ad">SCAN <tspan class="blink2" fill="#f472b6">&#9608;</tspan></text>
   </g>
 
+  <!-- divider between radar and matrix -->
+  <line x1="500" y1="60" x2="500" y2="430" stroke="#1e2b45" stroke-dasharray="3 7"/>
+
   <!-- right: platform matrix -->
   <text class="fps" x="520" y="66" font-size="17" letter-spacing="2" fill="#22d3ee" font-weight="700">PLATFORM MATRIX <tspan fill="#5b6478" font-size="14">// 5 nodes online</tspan></text>
 
   <g class="fps" font-family="monospace">
-    <!-- douyin-cli -->
+    <!-- douyin-cli · 248★ -->
     <g class="flick">
       <rect x="520" y="84" width="560" height="58" rx="8" fill="#0e1426" stroke="#f472b6" stroke-opacity="0.55" stroke-width="1.4"/>
       <circle class="blink2" cx="546" cy="113" r="5" fill="#f472b6"/>
       <text x="564" y="108" font-size="17" fill="#f0abfc" font-weight="700">douyin-cli</text>
       <text x="564" y="128" font-size="13" fill="#8b95ad">评论管理 &#183; 图片评论 &#183; 多账号 &#183; ReplyEngine</text>
-      <text x="1064" y="112" text-anchor="end" font-size="17" fill="#f472b6" font-weight="700">76&#9733;</text>
+      <text x="1064" y="112" text-anchor="end" font-size="17" fill="#f472b6" font-weight="700">248&#9733;</text>
+      <text x="1064" y="97" text-anchor="end" font-size="9.5" fill="#f472b6" letter-spacing="1">RANK #1 · TOP SIGNAL</text>
+      <rect x="564" y="136" width="0" height="3" rx="1.5" fill="url(#barPink)"><animate attributeName="width" from="0" to="480" dur="1.4s" fill="freeze"/></rect>
     </g>
     <g style="animation-delay:-1.2s">
       <rect x="520" y="152" width="560" height="58" rx="8" fill="#0e1426" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1.4"/>
       <circle class="blink2" cx="546" cy="181" r="5" fill="#22d3ee"/>
       <text x="564" y="176" font-size="17" fill="#67e8f9" font-weight="700">xiaohongshu-cli</text>
       <text x="564" y="196" font-size="13" fill="#8b95ad">笔记搜索 &#183; 嵌套回复 &#183; 7 人格 AI 回复 &#183; 行为模拟</text>
-      <text x="1064" y="180" text-anchor="end" font-size="17" fill="#22d3ee" font-weight="700">36&#9733;</text>
+      <text x="1064" y="180" text-anchor="end" font-size="17" fill="#22d3ee" font-weight="700">41&#9733;</text>
+      <text x="1064" y="165" text-anchor="end" font-size="9.5" fill="#3f8fa3" letter-spacing="1">RANK #2</text>
+      <rect x="564" y="204" width="0" height="3" rx="1.5" fill="url(#barCyan)"><animate attributeName="width" from="0" to="79" dur="1.4s" fill="freeze"/></rect>
     </g>
     <g style="animation-delay:-2.2s">
       <rect x="520" y="220" width="560" height="58" rx="8" fill="#0e1426" stroke="#a78bfa" stroke-opacity="0.5" stroke-width="1.4"/>
       <circle class="blink2" cx="546" cy="249" r="5" fill="#a78bfa"/>
       <text x="564" y="244" font-size="17" fill="#c4b5fd" font-weight="700">BossZhipin-cli</text>
       <text x="564" y="264" font-size="13" fill="#8b95ad">搜索职位 &#183; 智能匹配 &#183; 批量打招呼 &#183; LLM 招呼语</text>
-      <text x="1064" y="248" text-anchor="end" font-size="17" fill="#a78bfa" font-weight="700">22&#9733;</text>
+      <text x="1064" y="248" text-anchor="end" font-size="17" fill="#a78bfa" font-weight="700">24&#9733;</text>
+      <text x="1064" y="233" text-anchor="end" font-size="9.5" fill="#6d5aa8" letter-spacing="1">RANK #3</text>
+      <rect x="564" y="272" width="0" height="3" rx="1.5" fill="url(#barViolet)"><animate attributeName="width" from="0" to="46" dur="1.4s" fill="freeze"/></rect>
     </g>
     <g style="animation-delay:-3s">
       <rect x="520" y="288" width="560" height="58" rx="8" fill="#0e1426" stroke="#4ade80" stroke-opacity="0.45" stroke-width="1.4"/>
@@ -131,16 +164,20 @@
       <text x="564" y="312" font-size="17" fill="#86efac" font-weight="700">ths-cli</text>
       <text x="564" y="332" font-size="13" fill="#8b95ad">行情/K线 &#183; 技术分析 &#183; 策略回测 &#183; 盘中风控</text>
       <text x="1064" y="316" text-anchor="end" font-size="17" fill="#4ade80" font-weight="700">13&#9733;</text>
+      <text x="1064" y="301" text-anchor="end" font-size="9.5" fill="#3a8a56" letter-spacing="1">RANK #4</text>
+      <rect x="564" y="340" width="0" height="3" rx="1.5" fill="url(#barGreen)"><animate attributeName="width" from="0" to="25" dur="1.4s" fill="freeze"/></rect>
     </g>
     <g style="animation-delay:-3.8s">
       <rect x="520" y="356" width="560" height="58" rx="8" fill="#0e1426" stroke="#fbbf24" stroke-opacity="0.45" stroke-width="1.4"/>
       <circle class="blink2" cx="546" cy="385" r="5" fill="#fbbf24"/>
       <text x="564" y="380" font-size="17" fill="#fde68a" font-weight="700">tiktok-cli</text>
       <text x="564" y="400" font-size="13" fill="#8b95ad">评论管理 &#183; 嵌套回复 &#183; 写接口实测 &#183; 长串缓存</text>
-      <text x="1064" y="384" text-anchor="end" font-size="17" fill="#fbbf24" font-weight="700">2&#9733;</text>
+      <text x="1064" y="384" text-anchor="end" font-size="17" fill="#fbbf24" font-weight="700">3&#9733;</text>
+      <text x="1064" y="369" text-anchor="end" font-size="9.5" fill="#9a7a22" letter-spacing="1">RANK #5</text>
+      <rect x="564" y="408" width="0" height="3" rx="1.5" fill="url(#barAmber)"><animate attributeName="width" from="0" to="6" dur="1.4s" fill="freeze"/></rect>
     </g>
   </g>
 
   <!-- right bottom status -->
-  <text class="fps" x="520" y="444" font-size="14" fill="#5b6478">NODES <tspan fill="#4ade80">5/5</tspan>  &#183;  RTT <tspan fill="#22d3ee">12ms</tspan>  &#183;  AGENT <tspan class="blink" fill="#f472b6">&#9608;</tspan></text>
+  <text class="fps" x="520" y="444" font-size="13" fill="#5b6478">NODES <tspan fill="#4ade80">5/5</tspan>  &#183;  FORKS <tspan fill="#f472b6">68</tspan>  &#183;  COMMITS <tspan fill="#a78bfa">239</tspan>  &#183;  RTT <tspan fill="#22d3ee">12ms</tspan>  &#183;  AGENT <tspan class="blink" fill="#f472b6">&#9608;</tspan></text>
 </svg>

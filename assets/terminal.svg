@@ -163,7 +163,7 @@
     <rect x="196" y="369" width="1" height="14" fill="#1e2b45"/>
     <text class="fps" x="210" y="380" font-size="14" fill="#8b95ad">userscript · wss · llm · asr</text>
     <rect x="676" y="367" width="9" height="15" fill="#22d3ee" class="blink"/>
-    <text class="fps" x="1068" y="380" text-anchor="end" font-size="14" letter-spacing="1"><tspan fill="#22d3ee">NO SIMULATION</tspan><tspan fill="#5b6478"> · real chrome · 0 headless</tspan></text>
+    <text class="fps" x="1068" y="380" text-anchor="end" font-size="14" letter-spacing="1"><tspan fill="#fbbf24" font-weight="700">398&#9733;</tspan><tspan fill="#5b6478"> · </tspan><tspan fill="#22d3ee">NO SIMULATION</tspan><tspan fill="#5b6478"> · real chrome · 0 headless</tspan></text>
 
     <!-- corner brackets -->
     <g stroke="#22d3ee" stroke-width="3" fill="none" opacity="0.55">
